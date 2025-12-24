@@ -1,14 +1,14 @@
 {
     "id": 0,
-    "identifier": "f2e84c6a-b83c-4453-a6f9-c41bc99bf240",
-    "version": "1",
+    "identifier": "01bc839a-2e78-469d-8e30-af9173726d5d",
+    "version": "0",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Playbook",
     "creator": "faa73aaa-ddf0-4386-b498-62d06d7731c4",
     "modifiedBy": "faa73aaa-ddf0-4386-b498-62d06d7731c4",
     "priority": 2,
-    "description": "",
+    "description": "hello",
     "environments": [
         "Default Environment"
     ],
@@ -16,10 +16,10 @@
     "categoryId": 1,
     "originalPlaybookIdentifier": "f2e84c6a-b83c-4453-a6f9-c41bc99bf240",
     "creationTimeUnixTimeInMs": 1766571902725,
-    "modificationTimeUnixTimeInMs": 1766571902725,
+    "modificationTimeUnixTimeInMs": 1766572907149,
     "trigger": {
         "id": 0,
-        "identifier": "6e815d4f-e9f6-4996-a034-153189323eb0",
+        "identifier": "6bbc9ec6-99fd-47f2-aab2-96ebff954f09",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -33,7 +33,7 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "0d3b4243-fbd0-46b9-a08d-0fb1f58616ff",
+            "identifier": "8152ee8b-3432-4c7c-bfec-2e3e83e65b87",
             "originalStepIdentifier": "0d3b4243-fbd0-46b9-a08d-0fb1f58616ff",
             "isAutomatic": true,
             "isSkippable": false,
@@ -172,12 +172,12 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "f2e84c6a-b83c-4453-a6f9-c41bc99bf240",
+            "workflowIdentifier": "01bc839a-2e78-469d-8e30-af9173726d5d",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1766571902725,
-            "modificationTimeUnixTimeInMs": 1766571902725,
+            "creationTimeUnixTimeInMs": 1766572907149,
+            "modificationTimeUnixTimeInMs": 1766572907149,
             "additionalProperties": {}
         }
     ],
