@@ -4,7 +4,9 @@
         "Integration": {},
         "Mappings": {},
         "Visual Family": {},
-        "Playbook": {},
+        "Playbook": {
+            "New Playbook": "\"\"\"# Playbooks |Name|Folder|Description| |----|------|-----------| {% for playbook in playbooks -%} |{{ playbook.name }}|{{ playbook.categoryName }}|{{ playbook.description }}| {% endfor -%}  \"\"\""
+        },
         "Connector": {},
         "Job": {}
     },
