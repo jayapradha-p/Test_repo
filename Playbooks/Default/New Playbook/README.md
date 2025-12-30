@@ -34,4 +34,4 @@ this is testing
 |---------|-----------|-----------|---------------|
 |Siemplify_Case Comment_1|Add a comment to the case the current alert has been grouped to|Siemplify|Case Comment|
 
-"""# Playbooks |Name|Folder|Description| |----|------|-----------| """
+jinja
