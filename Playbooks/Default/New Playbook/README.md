@@ -1,9 +1,7 @@
 # New Playbook
 This is Testing
 Testing purpose
-hello
-
-this is testing
+hello\n this is testing
 
 
 
