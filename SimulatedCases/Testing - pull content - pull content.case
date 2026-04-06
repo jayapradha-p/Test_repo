@@ -1,0 +1,58 @@
+{
+    "cases": [
+        {
+            "creatorUserId": null,
+            "events": [
+                {
+                    "_fields": {
+                        "baseEventIds": [],
+                        "parentEventId": 0,
+                        "deviceEventClassId": "Testing - pull content - pull content - pull content",
+                        "startTime": "1775476449245",
+                        "endTime": "1775476449245",
+                        "deviceProduct": "soar"
+                    },
+                    "_rawDataFields": {
+                        "deviceEventClassId": "tetsing",
+                        "deviceProduct": "soar",
+                        "name": "tetsing"
+                    },
+                    "environment": null,
+                    "sourceSystemName": null,
+                    "extensions": []
+                }
+            ],
+            "environment": null,
+            "sourceSystemName": "Hello",
+            "ticketId": "Testing - pull content - pull content",
+            "description": null,
+            "displayId": null,
+            "reason": null,
+            "name": "Testing - pull content - pull content",
+            "deviceVendor": "soar",
+            "deviceProduct": "soar",
+            "startTime": 1775476449245,
+            "endTime": 1775476449245,
+            "type": 0,
+            "priority": -1,
+            "ruleGenerator": "Testing - pull content - pull content",
+            "sourceGroupingIdentifier": null,
+            "playbookTriggerKeywords": [],
+            "extensions": [],
+            "attachments": null,
+            "isTrimmed": false,
+            "dataType": 1,
+            "sourceType": 1,
+            "sourceSystemUrl": null,
+            "sourceRuleIdentifier": null,
+            "siemAlertId": null,
+            "updatedFields": [],
+            "alertUpdateSupported": false,
+            "alertMetadata": {},
+            "dataAccessScope": null
+        }
+    ],
+    "type": 0,
+    "connectorIdentifier": null,
+    "debugOutput": null
+}
