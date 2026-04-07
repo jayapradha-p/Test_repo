@@ -1,18 +1,1 @@
-[
-    {
-        "name": "projects/project/locations/location/instances/instance/dynamicParameters/2",
-        "id": 2,
-        "displayName": "Test2",
-        "parameterType": "List",
-        "defaultValue": "test1",
-        "optionalValuesJson": "[\"test1\",\"test2\"]"
-    },
-    {
-        "name": "projects/project/locations/location/instances/instance/dynamicParameters/1",
-        "id": 1,
-        "displayName": "Test",
-        "parameterType": "String",
-        "defaultValue": "encylo",
-        "optionalValuesJson": "[]"
-    }
-]
+[]
