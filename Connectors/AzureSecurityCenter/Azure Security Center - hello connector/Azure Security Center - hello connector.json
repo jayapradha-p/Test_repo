@@ -207,7 +207,7 @@
     "updateAvailable": false,
     "enabled": false,
     "environment": "Default Environment",
-    "displayName": "Azure Security Center - hello connector",
+    "displayName": "Azure Security Center - hello connector - new",
     "description": "Pull security alerts from Azure Security Center. Note: whitelist works with alertType field.",
     "intervalSeconds": 10,
     "version": 1,
