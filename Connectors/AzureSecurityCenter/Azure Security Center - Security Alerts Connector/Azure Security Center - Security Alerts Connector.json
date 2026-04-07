@@ -4,7 +4,7 @@
     "custom": false,
     "documentationLink": "https://cloud.google.com/chronicle/docs/soar/marketplace-integrations/azure-security-center#azure_security_center_-_security_alerts_connector",
     "identifier": "Azure Security Center - Security Alerts Connector_8ae10b81-a6e2-4617-8a87-6c52286e5af5",
-    "connectorDefinitionName": "Azure Security Center - Security Alerts Connector",
+    "connectorDefinitionName": "Azure Security Center - hello connector",
     "integration": "AzureSecurityCenter",
     "remote": false,
     "loggingEnabledUntilUnixMs": 0,
