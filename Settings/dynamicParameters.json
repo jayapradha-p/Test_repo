@@ -1,0 +1,26 @@
+[
+    {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/22",
+        "id": 22,
+        "displayName": "Test3",
+        "parameterType": "String",
+        "defaultValue": "test3",
+        "optionalValuesJson": "[]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/21",
+        "id": 21,
+        "displayName": "Test2",
+        "parameterType": "List",
+        "defaultValue": "test21",
+        "optionalValuesJson": "[\"test21\",\"test22\"]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/20",
+        "id": 20,
+        "displayName": "Test1",
+        "parameterType": "String",
+        "defaultValue": "test1",
+        "optionalValuesJson": "[]"
+    }
+]
