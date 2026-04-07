@@ -14,5 +14,13 @@
         "parameterType": "String",
         "defaultValue": "hello",
         "optionalValuesJson": "[]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/dynamicParameters/4",
+        "id": 4,
+        "displayName": "dev-testing-1",
+        "parameterType": "String",
+        "defaultValue": "hello",
+        "optionalValuesJson": "[]"
     }
 ]
