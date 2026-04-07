@@ -1,0 +1,34 @@
+[
+    {
+        "alias": "projects/project/locations/location/instances/instance/soarDomains/4",
+        "id": 4,
+        "domain": "Test4",
+        "environments": "[\"Testing Env\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    },
+    {
+        "alias": "projects/project/locations/location/instances/instance/soarDomains/3",
+        "id": 3,
+        "domain": "Test3",
+        "environments": "[\"Default Environment\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    },
+    {
+        "alias": "projects/project/locations/location/instances/instance/soarDomains/2",
+        "id": 2,
+        "domain": "Test2",
+        "environments": "[\"Default Environment\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    },
+    {
+        "alias": "projects/project/locations/location/instances/instance/soarDomains/1",
+        "id": 1,
+        "domain": "Test1",
+        "environments": "[\"Default Environment\"]",
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
+    }
+]
