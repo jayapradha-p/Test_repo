@@ -1,0 +1,29 @@
+[
+    {
+        "name": "projects/project/locations/location/instances/instance/slaDefinitions/2",
+        "id": 2,
+        "slaType": "CasePriority",
+        "slaTypeValue": "[\"High\"]",
+        "slaPeriod": 2.0,
+        "slaPeriodTimeUnit": "Days",
+        "criticalSlaPeriod": 1.0,
+        "criticalSlaPeriodTimeUnit": "Days",
+        "environments": [
+            "*"
+        ]
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/slaDefinitions/1",
+        "id": 1,
+        "slaType": "AlertRuleGenerator",
+        "alertType": "AllAlerts",
+        "slaTypeValue": "",
+        "slaPeriod": 2.0,
+        "slaPeriodTimeUnit": "Days",
+        "criticalSlaPeriod": 1.0,
+        "criticalSlaPeriodTimeUnit": "Days",
+        "environments": [
+            "*"
+        ]
+    }
+]
