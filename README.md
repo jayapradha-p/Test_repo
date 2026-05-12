@@ -19,8 +19,10 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
-|New Playbook|This is TestingTesting purposehello this is testinghello|
-|playbook-5-2026|HellothisisTesting|
+|New Block|An embedded workflow that can receive inputs and return an output.|
+|New Playbook||
+|New Playbook - 2||
+|New Playbook2||
 
 
 ## Jobs
