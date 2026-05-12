@@ -1,5 +1,5 @@
 {
-    "system_version": "6.1.6.165",
+    "system_version": "6.1.6.170",
     "readme_addons": {
         "Integration": {},
         "Mappings": {},
@@ -9,7 +9,8 @@
             "playbook-5-2026": "jinja"
         },
         "Connector": {},
-        "Job": {}
+        "Job": {},
+        "Block": {}
     },
     "settings": {
         "update_root_readme": true
