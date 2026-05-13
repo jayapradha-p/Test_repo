@@ -1,0 +1,28 @@
+[
+    {
+        "type": 0,
+        "name": "test1",
+        "content": "test",
+        "creatorUserName": "f7c0791b-889c-42a8-b373-a4919c7737b4",
+        "forMigration": false,
+        "environments": [
+            "Default Environment"
+        ],
+        "id": 1,
+        "creationTimeUnixTimeInMs": 1778671238277,
+        "modificationTimeUnixTimeInMs": 1778671238277
+    },
+    {
+        "type": 0,
+        "name": "test2",
+        "content": "test",
+        "creatorUserName": "f7c0791b-889c-42a8-b373-a4919c7737b4",
+        "forMigration": false,
+        "environments": [
+            "Default Environment"
+        ],
+        "id": 2,
+        "creationTimeUnixTimeInMs": 1778671252479,
+        "modificationTimeUnixTimeInMs": 1778671252479
+    }
+]

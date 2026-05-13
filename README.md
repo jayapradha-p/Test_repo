@@ -16,15 +16,6 @@
 |Azure Security Center - hello connector - new|Pull security alerts from Azure Security Center. Note: whitelist works with alertType field.|False|
 
 
-## Playbooks
-|Name|Description|
-|----|-----------|
-|New Block|An embedded workflow that can receive inputs and return an output.|
-|New Playbook||
-|New Playbook - 2||
-|New Playbook2||
-
-
 ## Jobs
 |Name|Description|
 |----|-----------|
