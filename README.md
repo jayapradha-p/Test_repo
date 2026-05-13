@@ -16,6 +16,13 @@
 |Azure Security Center - hello connector - new|Pull security alerts from Azure Security Center. Note: whitelist works with alertType field.|False|
 
 
+## Visual Families
+|Name|Description|
+|----|-----------|
+|test1|testing 1|
+|test2|testing for 2|
+
+
 ## Jobs
 |Name|Description|
 |----|-----------|
