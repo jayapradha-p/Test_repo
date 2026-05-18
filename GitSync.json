@@ -2,7 +2,9 @@
     "system_version": "6.3.0.843",
     "readme_addons": {
         "Integration": {},
-        "Mappings": {},
+        "Mappings": {
+            "GoogleChronicle": " "
+        },
         "Visual Family": {},
         "Playbook": {
             "New Playbook": "jinja",
