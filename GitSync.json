@@ -1,10 +1,10 @@
 {
-    "system_version": "6.3.0.843",
+    "system_version": "6.3.0.845",
     "readme_addons": {
         "Integration": {},
         "Mappings": {
             "GoogleChronicle": "   ",
-            "Google Chronicle": "   "
+            "Google Chronicle": "test"
         },
         "Visual Family": {},
         "Playbook": {
