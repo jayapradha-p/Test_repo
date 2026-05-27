@@ -20,9 +20,10 @@
 ## Playbooks
 |Name|Description|
 |----|-----------|
+|Azure AD Enrichment|This block enriches Siemplify Host and User entities with relevant information from Azure Active Directory, providing additional context to support investigation and response activities.|
+|Clean Case|Clean case (Tags, Alert scoring info, etc) when playbooks that are often rerun and can create duplicate evidence.  Extend this logic to meet your requirements.|
 |New Block|An embedded workflow that can receive inputs and return an output.|
 |New Playbook||
-|New Playbook - 1||
 
 
 ## Jobs
