@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|Flashpoint|Flashpoint is a global trusted leader in risk intelligence for organizations. From bolstering cyber and physical security, to detecting fraud and insider threats. Flashpoint enables users to enrich and enhance their internal data with our targeted data acquired from highly-curated sources.|
 |Forti Manager|FortiManager provides one console to manage your network, giving you full control of your Fortinet devices with enterprise-class management.|
 |Fortinet FortiSIEM|FortiSIEM brings together visibility, correlation, automated response, and remediation in a single, scalable solution. It reduces the complexity of managing network and security operations to effectively free resources, improve breach detection, and even prevent breaches.|
 |Functions|A set of math and data manipulation actions created for Google SecOps Community to power up playbook capabilities.|
