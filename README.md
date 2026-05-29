@@ -59,6 +59,7 @@
 |Runners|Run commands as different users. Permission to replace a process level token is required (in local policies)|
 |SentinelOneV2|Endpoint security software that defends every endpoint against every type of attack, at every stage in the threat lifecycle.|
 |Shodan|Shodan is a search engine that lets the user find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters.|
+|Tenable.io|Managed in the cloud and powered by Nessus technology, Tenable.io provides the industry's most comprehensive vulnerability coverage with the ability to predict which security issues to remediate first. It’s your complete end-to-end vulnerability management solution.|
 |Tenable Security Center|SecurityCenter is a comprehensive vulnerability analysis solution that provides complete visibility into the security posture of your distributed and complex IT infrastructure.|
 |ThreatCrowd|ThreatCrowd is a system for finding and researching artifacts relating to cyber threats.|
 |Threat Exchange|ThreatExchange is an API platform for security professionals to share threat intelligence more easily, learn from each other's discoveries, and make their own systems safer.|
