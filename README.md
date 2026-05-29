@@ -59,6 +59,7 @@
 |Runners|Run commands as different users. Permission to replace a process level token is required (in local policies)|
 |SentinelOneV2|Endpoint security software that defends every endpoint against every type of attack, at every stage in the threat lifecycle.|
 |Shodan|Shodan is a search engine that lets the user find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters.|
+|Threat Exchange|ThreatExchange is an API platform for security professionals to share threat intelligence more easily, learn from each other's discoveries, and make their own systems safer.|
 |Tools|A set of utility actions for data manipulation and common platform tasks to power up playbook capabilities.|
 |Tor|traffic by encrypting packets and sending them through a series of hops before they reach their destination.|
 |Trend Micro Cloud App Security|Trend Micro Cloud App Security enables you to embrace the efficiency of cloud services while maintaining security. It protects incoming and internal Office 365 email from advanced malware and other threats, and enforces compliance on other cloud file-sharing services, including Box, Dropbox, Google Drive, SharePoint® Online, and OneDrive® for Business. Cloud App Security integrates directly with Office 365 and other services using APIs, maintaining all user functionality without rerouting email traffic or setting up a web proxy.|
