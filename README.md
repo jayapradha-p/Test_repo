@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|Cloud Identity|A unified identity, access, app, and endpoint management (IAM/EMM) platform.|
 |CrowdStrike Falcon|CrowdStrike Falcon is the leader in next-generation endpoint protection, threat intelligence and incident response through cloud-based endpoint protection.|
 |CyberArkVault|Secure, Rotate and Control Access to Privileged Account Credentials|
 |Cyberint|Digital Risk Protection that turns intelligence into actions to proactively and effectively defend businesses against cyber threats.|
