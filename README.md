@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|Check Point SandBlast|Protect your organization from zero-day cyber attacks with SandBlast Network, the marketâ€™s leading advanced network threat prevention solution. Increase productivity while creating a secure environment with innovative technologies like threat emulation, threat extraction and artificial intelligence.|
 |Cloud Identity|A unified identity, access, app, and endpoint management (IAM/EMM) platform.|
 |CrowdStrike Falcon|CrowdStrike Falcon is the leader in next-generation endpoint protection, threat intelligence and incident response through cloud-based endpoint protection.|
 |CyberArkVault|Secure, Rotate and Control Access to Privileged Account Credentials|
