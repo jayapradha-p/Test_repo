@@ -59,6 +59,7 @@
 |Runners|Run commands as different users. Permission to replace a process level token is required (in local policies)|
 |SentinelOneV2|Endpoint security software that defends every endpoint against every type of attack, at every stage in the threat lifecycle.|
 |Shodan|Shodan is a search engine that lets the user find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters.|
+|WHOIS XML API|Whois API provides consistent, well-structured whois data in XML & JSON. It provides WHOIS record and domain related information.|
 |Zabbix|Zabbix is an enterprise open source monitoring software for networks and applications.It is designed to monitor and track the status of various network services, servers, and other network hardware.|
 |beSECURE|beSecure is a flexible, accurate, low maintenance Vulnerability Assessment and Management solution that delivers solid security improvements.|
 
