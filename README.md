@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|CyberArkVault|Secure, Rotate and Control Access to Privileged Account Credentials|
 |Cyberint|Digital Risk Protection that turns intelligence into actions to proactively and effectively defend businesses against cyber threats.|
 |Cybersixgill Actionable Alerts|By integrating Cybersixgill actionable alerts, Google SecOps customers gain a premium,automated threat intelligence solution based on the most comprehensive data sources from the deep, dark and surface web. It is customizable, enabling users to define key assets relevant to their brand, industry, and geolocation. Users can covertly monitor critical assets such as IP addresses, domains, vulnerabilities, and VIPs for activity on the underground and closed sources - and prioritize, as well as respond to threats directly from the Google SecOps dashboard.|
 |Cybersixgill Darkfeed|Powered by the broadest, automated collection from the deep and dark web, Cybersixgill Darkfeed is a feed of malicious indicators of compromise (IOCs), including domains, URLs, hashes and IP addresses. IOCs are automatically extracted and delivered in real-time, and it is actionable, allowing Google SecOps customers to receive and preemptively block items that threaten their organization.|
