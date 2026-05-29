@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|CrowdStrike Falcon|CrowdStrike Falcon is the leader in next-generation endpoint protection, threat intelligence and incident response through cloud-based endpoint protection.|
 |CyberArkVault|Secure, Rotate and Control Access to Privileged Account Credentials|
 |Cyberint|Digital Risk Protection that turns intelligence into actions to proactively and effectively defend businesses against cyber threats.|
 |Cybersixgill Actionable Alerts|By integrating Cybersixgill actionable alerts, Google SecOps customers gain a premium,automated threat intelligence solution based on the most comprehensive data sources from the deep, dark and surface web. It is customizable, enabling users to define key assets relevant to their brand, industry, and geolocation. Users can covertly monitor critical assets such as IP addresses, domains, vulnerabilities, and VIPs for activity on the underground and closed sources - and prioritize, as well as respond to threats directly from the Google SecOps dashboard.|
