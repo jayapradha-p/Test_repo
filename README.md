@@ -3,6 +3,7 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|Cybersixgill Darkfeed|Powered by the broadest, automated collection from the deep and dark web, Cybersixgill Darkfeed is a feed of malicious indicators of compromise (IOCs), including domains, URLs, hashes and IP addresses. IOCs are automatically extracted and delivered in real-time, and it is actionable, allowing Google SecOps customers to receive and preemptively block items that threaten their organization.|
 |FireEye HX|The FireEye HX series is a threat prevention platform that helps drive faster, more accurate decisions about potential security incidents on endpoints.|
 |Flashpoint|Flashpoint is a global trusted leader in risk intelligence for organizations. From bolstering cyber and physical security, to detecting fraud and insider threats. Flashpoint enables users to enrich and enhance their internal data with our targeted data acquired from highly-curated sources.|
 |Forti Manager|FortiManager provides one console to manage your network, giving you full control of your Fortinet devices with enterprise-class management.|
