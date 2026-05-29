@@ -4,6 +4,7 @@
 |Name|Description|
 |----|-----------|
 |MSSQL|Microsoft SQL Server is a relational database management system developed by Microsoft.|
+|Microsoft Teams|Microsoft Teams is a platform that combines workplace chat, meetings, notes, and attachmentsQuick Guide: you must first register your app at Microsoft App Registration Portal, Configure Microsoft Teams Integration, Run the action 'Get Authorization', Run the action 'Generate Token'.|
 |MongoDB|MongoDB is a free and open-source cross-platform document-oriented database program.|
 
 
