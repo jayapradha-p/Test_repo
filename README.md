@@ -3,6 +3,15 @@
 ## Integrations
 |Name|Description|
 |----|-----------|
+|Azure API|Azure API integration was designed for you to execute Azure API without the need of writing any code. This integration version uses Impersonated/Delegated Authentication in Microsoft 365 and requires interactive login of the user on behalf of which integration should communicate with Microsoft 365. To configure this integration, provide all parameters except for Refresh Token, and save the integration configuration, then run “Get Authorization” and “Generate Token” actions to get the token and then provide it in integration configuration to finish the process. Microsoft 365 and Office 365 deliver the power of cloud productivity to businesses of all sizes, helping save time, money, and free up valued resources. The Microsoft 365 and Office 365 plans combine the familiar Microsoft Office desktop suite with cloud-based versions of Microsoft's next-generation communications and collaboration services (including Office for the web, Microsoft Exchange Online, Microsoft Teams, and Microsoft SharePoint Online) to help users be productive from virtually anywhere through the Internet. This integration uses Microsoft Graph Mail API to communicate with Microsoft 365 and Office 365 services.|
+|Azure Monitor|Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from your cloud and on-premises environments.|
+|Azure Security Center|Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your data centers, and provides advanced threat protection across your hybrid workloads in the cloud - whether they're in Azure or not - as well as on premises.|
+|BitSight|BitSight offers the world's leading security ratings solution with a mission to change the way the world manages cybersecurity analytics and risk.|
+|Vmware Carbon Black Cloud|The VMware Carbon Black Cloud is a cloud-native endpoint protection platform (EPP) that combines the intelligent system hardening and behavioral prevention needed to keep emerging threats at bay, using a single lightweight agent, and an easy-to-use console.|
+|Carbon Black Defense|Next-generation antivirus + EDR in one cloud-delivered platform that stops commodity malware, advanced malware, non-malware attacks and ransomware|
+|VMware Carbon Black Enterprise EDR|The VMware Carbon Black Enterprise EDR is an advanced threat hunting and incident response solution delivering continuous visibility for top security operations centers (SOCs) and incident response (IR) teams. Enterprise EDR is delivered through the VMware Carbon Black Cloud, a next-generation endpoint protection platform that consolidates security in the cloud using a single agent, console and dataset.|
+|Carbon Black Response|Highly scalable, real-time EDR with unparalleled visibility for top security operations centers and incident response teams|
+|Check Point SandBlast|Protect your organization from zero-day cyber attacks with SandBlast Network, the marketâ€™s leading advanced network threat prevention solution. Increase productivity while creating a secure environment with innovative technologies like threat emulation, threat extraction and artificial intelligence.|
 |Cloud Identity|A unified identity, access, app, and endpoint management (IAM/EMM) platform.|
 |CrowdStrike Falcon|CrowdStrike Falcon is the leader in next-generation endpoint protection, threat intelligence and incident response through cloud-based endpoint protection.|
 |CyberArkVault|Secure, Rotate and Control Access to Privileged Account Credentials|
@@ -13,6 +22,7 @@
 |Flashpoint|Flashpoint is a global trusted leader in risk intelligence for organizations. From bolstering cyber and physical security, to detecting fraud and insider threats. Flashpoint enables users to enrich and enhance their internal data with our targeted data acquired from highly-curated sources.|
 |Forti Manager|FortiManager provides one console to manage your network, giving you full control of your Fortinet devices with enterprise-class management.|
 |Fortinet FortiSIEM|FortiSIEM brings together visibility, correlation, automated response, and remediation in a single, scalable solution. It reduces the complexity of managing network and security operations to effectively free resources, improve breach detection, and even prevent breaches.|
+|beSECURE|beSecure is a flexible, accurate, low maintenance Vulnerability Assessment and Management solution that delivers solid security improvements.|
 
 
 ## Connectors
