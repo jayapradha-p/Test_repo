@@ -3,7 +3,7 @@
 
 ANY.RUN Threat Intelligence Lookup (TI Lookup) is a service that enables you to explore Indicators of Compromise (IOCs) and associated threat data, streamlining and enhancing cyberattack investigations. Seamlessly integrate it with Google SecOps to enrich IOCs such as hashes, IPs, domains, and URLs with comprehensive threat context. This empowers deeper threat understanding and supports more accurate decision-making.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -64,13 +64,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{}
-```
-
-
-
 #### ANYRUN TI Lookup
 Perform threat intelligence using specified Entity.
 Timeout - 600 Seconds
@@ -82,13 +75,6 @@ Timeout - 600 Seconds
 |Query|Raw query with necessary filters. Supports condition concatenation with AND, OR, NOT and Parentheses ().|False|String||
 |Identifiers|The target case entity identifiers.|True|String|[Entity.Identifier]|
 |Types|The target case entity types.|True|String|[Entity.Type]|
-
-
-
-##### JSON Results
-```json
-{}
-```
 
 
 

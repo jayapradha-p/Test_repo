@@ -3,7 +3,7 @@
 
 CloudGuard is a cloud security posture management solution for cloud environments such as Amazon AWS, Microsoft Azure, and Google Cloud Platform. CloudGuard provides network security policy management and automation for your cloud environment across providers, regions and accounts. Organizations trust CloudGuard to ensure that their network security is well defined and understood, and then to enforce that security policy on a continuous basis. In the event of an unauthorized change, (for example, somebody or something attempts to open network ports) CloudGuard prevents this and instead enforces the configuration you have previously defined.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -48,13 +48,10 @@ Pull alerts from Check Point Cloud Guard.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
-|EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|alertType|
-|PythonProcessTimeout|Timeout limit for the python process running the current script.|True|Integer|180|
 |API Key ID|API Key ID of the Check Point Cloud Guard account.|True|String||
 |API Key Secret|API Key Secret of the Check Point Cloud Guard account.|True|Password|*****|
-|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Integer|1|
-|Max Alerts To Fetch|How many alerts to process per one connector iteration.|True|Integer|50|
+|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Int|1|
+|Max Alerts To Fetch|How many alerts to process per one connector iteration.|True|Int|50|
 |Lowest Severity To Fetch|Lowest severity that will be used to fetch alerts. Possible values: Low, Medium, High|True|String|Medium|
 |Use whitelist as a blacklist|If enabled, whitelist will be used as a blacklist.|False|Boolean|false|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the CheckPoint Cloud Guard server is valid.|False|Boolean|true|

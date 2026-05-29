@@ -3,7 +3,7 @@
 
 Connect to endpoints vis SSH and perform various operations.
 
-Python Version - 3
+Python Version - V3_11
 
 
 #### Dependencies
@@ -39,13 +39,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"-,Chain,Rule": ["-P,INPUT,ACCEPT", "-P,FORWARD,ACCEPT", "-P,OUTPUT,ACCEPT"]}
-```
-
-
-
 #### List Connections
 List all  connections on a remote machine
 Timeout - 600 Seconds
@@ -57,13 +50,6 @@ Timeout - 600 Seconds
 |Remote Username|Remote Username|True|String||
 |Remote Password|Remote Password|True|Password|*****|
 |Remote Port|Remote Port|False|String||
-
-
-
-##### JSON Results
-```json
-{"Results": ["Proto,Recv-Q,Send-Q,Local,Address,Foreign,Address,State,PID/Program,name", "tcp,0,0,0.0.0.0:111,0.0.0.0:*,LISTEN,1/systemd", "tcp,0,0,0.0.0.0:22,0.0.0.0:*,LISTEN,10624/sshd"]}
-```
 
 
 
@@ -81,13 +67,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"Processes": ["USER,PID,%CPU,%MEM,VSZ,RSS,TTY,STAT,START,TIME,COMMAND", "root,1,0.0,0.0,193656,6656,?,Ss,Jan16,0:24,/usr/lib/systemd/systemd --system --deserialize 24", "root,32142,0.0,0.0,0,0,?,S,Jan22,0:32,[kworker/3:1]"]}
-```
-
-
-
 #### Run Command
 Run command on a remote machine
 Timeout - 600 Seconds
@@ -100,13 +79,6 @@ Timeout - 600 Seconds
 |Remote Password|Remote Password|True|Password|*****|
 |Remote Port|Remote Port|False|String||
 |Command|Command content(e.g: ifconfig).|True|String||
-
-
-
-##### JSON Results
-```json
-{"ifconfig": "ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>mtu1500\ninet1.1.1.1netmask1.1.1.1broadcast1.1.1.1\ninet6fe80: : 2156: 9c37: 7a0d: 87eprefixlen64scopeid0x20<link>\nether00: 50: 56: b5: 70: e3txqueuelen1000(Ethernet)\nRXpackets7448423bytes1077754116(1.0GiB)\nRXerrors0dropped0overruns0frame0\nTXpackets370155bytes44300304(42.2MiB)\nTXerrors0dropped0overruns0carrier0collisions0\n\nlo: flags=73<UP,LOOPBACK,RUNNING>mtu65536\ninet1.1.1.1netmask1.1.1.1\ninet6: : 1prefixlen128scopeid0x10<host>\nlooptxqueuelen1000(LocalLoopback)\nRXpackets86bytes4780(4.6KiB)\nRXerrors0dropped0overruns0frame0\nTXpackets86bytes4780(4.6KiB)\nTXerrors0dropped0overruns0carrier0collisions0\n\n", "output": "ens32: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>mtu1500\ninet1.1.1.1netmask1.1.1.1broadcast1.1.1.1\ninet6fe80: : 2156: 9c37: 7a0d: 87eprefixlen64scopeid0x20<link>\nether00: 50: 56: b5: 70: e3txqueuelen1000(Ethernet)\nRXpackets7448423bytes1077754116(1.0GiB)\nRXerrors0dropped0overruns0frame0\nTXpackets370155bytes44300304(42.2MiB)\nTXerrors0dropped0overruns0carrier0collisions0\n\nlo: flags=73<UP,LOOPBACK,RUNNING>mtu65536\ninet1.1.1.1netmask1.1.1.1\ninet6: : 1prefixlen128scopeid0x10<host>\nlooptxqueuelen1000(LocalLoopback)\nRXpackets86bytes4780(4.6KiB)\nRXerrors0dropped0overruns0frame0\nTXpackets86bytes4780(4.6KiB)\nTXerrors0dropped0overruns0carrier0collisions0\n\n"}
-```
 
 
 

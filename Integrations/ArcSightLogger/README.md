@@ -3,11 +3,11 @@
 
 ArcSight Logger is a comprehensive solution for security event log management.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Server Address||True|None|https://<host>:<port>|
+|Server Address||True|URL|https://<host>:<port>|
 |Username||True|String||
 |Password||True|Password|*****|
 |Verify SSL||False|Boolean|False|
@@ -42,13 +42,6 @@ Timeout - 600 Seconds
 |Local Search Only|Indicates that ArcSight Logger event search is local only, and does not include ArcSight Logger peers. Set to false if you want to include peers in the event search.|False|Boolean|False|
 |Discover Fields|Indicates that the ArcSight Logger search should try to discover fields in the events found.|False|Boolean|True|
 |Sort|Specify what sorting method to use.Possible values:ascendingdescending|False|String|ascending|
-
-
-
-##### JSON Results
-```json
-[{"baseEventCount": 1, "destinationAddress": "172.30.20x.xx", "deviceAddress": "172.30.20x.xx", "deviceEventClassId": "storagegroup:xxx", "deviceReceiptTime": 1591865902357, "deviceVendor": "ArcSight", "endTime": 1591865902357, "fileType": "storageGroup"}, {"baseEventCount": 1, "destinationAddress": "172.30.20x.xx", "deviceAddress": "172.30.20x.xx", "deviceEventClassId": "eps:xxx", "deviceReceiptTime": 1591865902357, "deviceVendor": "ArcSight", "endTime": 1591865902357, "fileType": ""}, {"baseEventCount": 1, "destinationAddress": "172.30.20x.xx", "deviceAddress": "172.30.20x.xx", "deviceEventClassId": "disk:xxx", "deviceReceiptTime": 1591865902357, "deviceVendor": "ArcSight", "endTime": 1591865902357, "fileType": ""}, {"baseEventCount": 1, "destinationAddress": "172.30.20x.xx", "deviceAddress": "172.30.20x.xx", "deviceEventClassId": "network:xxx", "deviceReceiptTime": 1591865902357, "deviceVendor": "ArcSight", "endTime": 1591865902357, "fileType": ""}]
-```
 
 
 

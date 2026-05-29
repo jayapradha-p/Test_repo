@@ -3,11 +3,11 @@
 
 A complete automation solution to enable efficient automated service management and reduce the cost of IT operations.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|API Root||True|None|https://<serverAddress>/|
+|API Root||True|URL|https://<serverAddress>/|
 |Username||True|String||
 |Password||True|Password|*****|
 |Tenant ID||True|String||

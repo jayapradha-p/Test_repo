@@ -3,7 +3,7 @@
 
 Remote Agents Utilities enable file transfers between a Google SecOps machine to a machine which has a remote agent installed on it and vice versa.
 
-Python Version - 3
+Python Version - V3_11
 
 
 #### Dependencies
@@ -27,13 +27,6 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |File Path|Full path of the file|True|String||
-
-
-
-##### JSON Results
-```json
-{"file_name": "example.txt", "base64_file_content": "SGVsbG8gV29ybGQ="}
-```
 
 
 

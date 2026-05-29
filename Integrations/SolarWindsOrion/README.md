@@ -3,7 +3,7 @@
 
 The Orion Platform offers a single architecture that scales to manage the most complex and geographically dispersed IT environments. SolarWinds scalability engines are designed to provide monitoring and management for large enterprise-class infrastructures. Additional polling engines allow you to scale up to 400,000 elements on a single Orion Platform instance while additional web servers scale the number of supported users. With Enterprise Operations Console (EOC), you can centralize and simplify data management of multiple instances in a single, consolidated view.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -40,23 +40,9 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"results": [{"IpAddress": "172.30.203.xxx", "DisplayName": "orion", "SystemUpTime": 859060.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 17763 Multiprocessor Free)", "ObjectSubType": "Agent", "Description": "Windows 2019 Server", "DNS": "orion", "SysName": "ORION"}, {"IpAddress": "172.30.202.xxx", "DisplayName": "DC001", "SystemUpTime": 848721.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 14393 Multiprocessor Free)", "ObjectSubType": "WMI", "Description": "Windows 2016 Server", "DNS": "", "SysName": "DC001"}]}
-```
-
-
-
 #### Enrich Endpoint
 Fetch endpoint's system information by its hostname or IP address.
 Timeout - 600 Seconds
-
-
-
-##### JSON Results
-```json
-{"results": [{"IpAddress": "172.30.203.xxx", "DisplayName": "orion", "SystemUpTime": 859060.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 17763 Multiprocessor Free)", "ObjectSubType": "Agent", "Description": "Windows 2019 Server", "DNS": "orion", "SysName": "ORION"}, {"IpAddress": "172.30.202.xxx", "DisplayName": "DC001", "SystemUpTime": 848721.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 14393 Multiprocessor Free)", "ObjectSubType": "WMI", "Description": "Windows 2016 Server", "DNS": "", "SysName": "DC001"}]}
-```
 
 
 
@@ -69,13 +55,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Query|Specify the query that needs to be executed. Note: SolarWind queries don’t support “*” notation.|True|String||
 |Max Results To Return|Specify how many results should be returned.|False|String|100|
-
-
-
-##### JSON Results
-```json
-{"results": [{"IpAddress": "172.30.203.xxx", "DisplayName": "orion", "SystemUpTime": 859060.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 17763 Multiprocessor Free)", "ObjectSubType": "Agent", "Description": "Windows 2019 Server", "DNS": "orion", "SysName": "ORION"}, {"IpAddress": "172.30.202.xxx", "DisplayName": "DC001", "SystemUpTime": 848721.0, "NodeDescription": "Hardware: Intel64 Family 6 Model 63 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 10.0 (Build 14393 Multiprocessor Free)", "ObjectSubType": "WMI", "Description": "Windows 2016 Server", "DNS": "", "SysName": "DC001"}]}
-```
 
 
 

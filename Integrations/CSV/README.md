@@ -3,7 +3,7 @@
 
 Integration designed around working with CSV files. CSV is a simple file format used to store tabular data, such as a spreadsheet or database.
 
-Python Version - 3
+Python Version - V3_11
 
 
 #### Dependencies
@@ -65,13 +65,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"EntityResult": {"Field2": "Value2", "Field3": "Value3", "Field1": "Value1", "Field4": "Value4", "Field5": "Value5"}, "Entity": "host"}, {"EntityResult": {"Field2": "Value2", "Field3": "Value3", "Field1": "Value1", "Field4": "Value4", "Field5": "Value5"}, "Entity": "1.1.1.1"}]
-```
-
-
-
 #### Ping
 Test Connectivity
 Timeout - 600 Seconds
@@ -97,13 +90,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"EntityResult": [{"domain": "SmartCompany.dom", "fileHash": "cbbc5aea3d4c7ec193aa2ff3b52df36ebb12338b18c9bb53fc4896115efaf78d", "reporter": "Symantec Antivirus", "app": "Arcsight", "id": "1011", "eventTime": "9/4/2017 10:00", "antivirusAction": "blocked", "virusName": "ECAT", "rule": "malicious", "eventName": "Virus detected", "User": "Ziv", "eventHostName": "WS-ZivDevComp", "File Source Path": "C:\\Users\\Default\\Desktop\\stringTimeRaw.csv", "machineAddress": "192.168.11.11"}, {"domain": "SmartCompany.dom", "fileHash": "cbbc5aea3d4c7ec193aa2ff3b52df36ebb12338b18c9bb53fc4896115efaf78d", "reporter": "Symantec Antivirus", "app": "ESM", "id": "1012", "eventTime": "9/4/2017 10:00", "antivirusAction": "allowed", "virusName": "ECAT", "rule": "malicious", "eventName": "Virus detected", "User": "GG", "eventHostName": "WS-GGDevComp", "File Source Path": "C:\\Users\\Default\\Desktop\\stringTimeRaw.csv", "machineAddress": "192.168.11.11"}], "Entity": "192.168.11.11"}]
-```
-
-
-
 #### Save Json To CSV
 Save JSON object  to CSV.
 Timeout - 600 Seconds
@@ -115,13 +101,6 @@ Timeout - 600 Seconds
 |Overwrite|If enabled, action will overwrite existing file.|False|Boolean|False|
 |File Path|Specify the absolute file path for the newly created CSV file. If only the file name is provided, action will store the file in /tmp/ folder.|True|String||
 |Advanced Nested JSON Handling|If enabled, action will create a CSV, where nested JSONs keys will be in separate columns and lists of JSON objects will be converted into rows. Data in CSV will be filled.|False|Boolean|False|
-
-
-
-##### JSON Results
-```json
-{"filepath":"/tmp/sample.csv"}
-```
 
 
 
@@ -137,13 +116,10 @@ Fetch data from csv files located in a specific folder, convert this data to ale
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|The field name used to determine the device product|True|String|device_product|
-|EventClassId|The field name used to determine the event name (sub-type)|False|String|name|
-|PythonProcessTimeout|The timeout limit (in seconds) for the python process running current script|True|String|60|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |Csv Folder Path|Folder path that contains all of the csv files that need to be ingested.|True|String||
-|CSV Limit|How many CSV files to process per one iteration.|False|Integer||
+|CSV Limit|How many CSV files to process per one iteration.|False|Int||
 |Time Field Name|Name of the field that contains information about the event time.|False|String||
 |Time Field Timezone|Timezone of the column stated in the 'Time Field Name' param.|False|String|UTC|
 |Rule Generator Field Name|Name of the field that contains information about the rule generator.|False|String||

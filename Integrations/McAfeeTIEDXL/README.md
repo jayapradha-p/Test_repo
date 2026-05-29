@@ -3,11 +3,11 @@
 
 McAfee Threat Intelligence Exchange optimizes threat detection and response by closing the gap from malware encounter to containment from days, weeks, and months down to milliseconds.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Server Address||True|None|ssl://{IP}:{PORT}|
+|Server Address||True|IP_OR_HOST|ssl://{IP}:{PORT}|
 |Broker CA Bundle Path||True|String||
 |Client Cert File Path||True|String||
 |Client Key File Path||True|String||
@@ -46,13 +46,6 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Enrich with all services|If checked, enrich with all results from all returned services. Else, store only the worst reputation as enrichment.|False|Boolean|False|
-
-
-
-##### JSON Results
-```json
-[{"EntityResult": [{"Verbose Trust level": "KNOWN_MALICIOUS", "First Contact": "2020-04-07 08:35:22 +00:00", "Verbose Provider": "Global Threat Intelligence (GTI)", "Provider ID": 1, "Trust Level": "1"}, {"Verbose Trust level": "NOT_SET", "First Contact": "2020-04-07 08:35:22 +00:00", "Verbose Provider": "McAfee Threat Intelligence Exchange", "Provider ID": 3, "Trust Level": "0"}, {"Verbose Trust level": "UNKNOWN", "First Contact": "2020-05-26 10:17:58 +00:00", "Verbose Provider": "Advanced Threat Defense (ATD)", "Provider ID": 5, "Trust Level": "50"}], "Entity": "275A021BBFB6489E54D471899F7DB9D1663FC695EC2FE2A2C4538AABF651FD0F"}]
-```
 
 
 

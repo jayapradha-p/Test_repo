@@ -3,11 +3,11 @@
 
 Endpoint security software that defends every endpoint against every type of attack, at every stage in the threat lifecycle.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Api Root|None|True|None|https://{server}.sentinelone.net/|
+|Api Root|None|True|URL|https://{server}.sentinelone.net/|
 |Username|None|True|String||
 |Password|None|True|Password|*****|
 

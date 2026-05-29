@@ -3,14 +3,14 @@
 
 Symantec Endpoint Protection, developed by Symantec, is a security software suite, which consists of anti-malware, intrusion prevention and firewall features for servers and desktops.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Api Root||True|None||
-|Client ID||True|String||
+|Api Root||True|URL|None|
+|Client ID||True|String|None|
 |Client Secret||True|Password|*****|
-|Refresh Token||True|String||
+|Refresh Token||True|String|None|
 |Verify SSL||False|Boolean|false|
 
 
@@ -61,13 +61,6 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Command ID|Command ID|True|String|7E975C32C71349E9BE495EC2220B902F|
-
-
-
-##### JSON Results
-```json
-{"computerName": "HOST_1", "subStateId": 0, "hardwareKey": "36817A7B13C3A6317932AD9819097123", "computerId": "9C9850840A0000BD3566F8ECC8417123", "domainName": "Default", "stateId": 0, "computerIp": "1.1.1.1", "currentLoginUserName": "admin"}
-```
 
 
 

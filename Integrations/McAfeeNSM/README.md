@@ -3,11 +3,11 @@
 
 McAfee Network Security Platform is a next-generation intrusion prevention system (IPS) that redefines how organizations block advanced threats.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|API Root||True|None|https://x.x.x.x/sdkapi/|
+|API Root||True|URL|https://x.x.x.x/sdkapi/|
 |Username||True|String||
 |Password||True|Password|*****|
 |Domain ID||True|String||
@@ -47,13 +47,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Sensor Name|Sensor Name|True|String|None|
 |Alert ID|Alert ID|True|String|None|
-
-
-
-##### JSON Results
-```json
-{"name": "MALWARE: Blacklisted File Detected", "assignTo": "---", "description": {"definition": "A McAfee-maintained blacklist that is dynamically updated with Callback Detectors updates.", "signatures": [{"conditions": "null"}], "componentAttacks": "null", "target": "ServerOrClient", "reference": {"cveId": "[]", "certId": "null", "bugtraqId": "[]", "nspId": "0x4840c300", "microsoftId": "[]", "additionInfo": "null", "arachNidsId": "[]"}, "protocals": "[smtp, ftp, http]", "comments": {"availabeToChildDomains": "true", "parentDomainComments": "null", "comments": ""}, "rfSB": "No", "attackCategory": "Malware", "attackSubCategory": "---", "protectionCategory": "[Malware/Bot]", "httpResponseAttack": "No", "btf": "Medium"}, "summary": {"destination": "null", "zoombie": "null", "target": {"ipAddrs": "1.1.1.1", "risk": "N/A", "country": "India", "networkObject": "---", "hostName": "null", "vmName": "null", "proxyIP": "1.1.1.1", "user": "Unknown", "os": "---", "port": 41128}, "attacker": {"ipAddrs": "1.1.1.1", "risk": "N/A", "country": "India", "networkObject": "---", "hostName": "null", "vmName": "null", "proxyIP": "1.1.1.1", "user": "Unknown", "os": "---", "port": 80}, "cAndcServer": "null", "source": "null", "compromisedEndpoint": "null", "attackedHIPEndpoint": {"ipAddrs": "1.1.1.1", "risk": "N/A", "country": "India", "networkObject": "---", "hostName": "null", "vmName": "null", "proxyIP": "1.1.1.1", "user": "Unknown", "os": "---", "port": 41128}, "fastFluxAgent": "null", "event": {"domain": "My Company", "protocol": "http", "zone": "null", "alertId": "2246015847757997493", "attackCount": 1, "vlan": "-11", "direction": "Inbound", "detection": "Signature", "application": "HTTP", "device": "NS9100-50", "result": "Inconclusive", "time": "Jan 04, 2016 09:50:39", "relevance": "Unknown", "matchedPolicy": "CustomFP_Engine_With_AlertOnly", "interface": "G3/1-G3/2"}}, "details": {"malwareFile": {"engine": "Manager Blacklist", "fileHash": "3f3f7c3b9722912ddeddf006cff9d9d0", "malwareConfidence": "Very High", "malwareName": "null", "fileName": "/Firewall.cpl", "size": "6144 bytes"}, "exceededThreshold": "null", "callbackDetectors": "null", "layer7": {"httpReturnCode": 200, "httpURI": "/Firewall.cpl", "httpRequestMethod": "GET", "httpServerType": "Apache/2.2.13 (Fedora) Last - Modified: Wed, 10 Oct 2012 05: 19: 15 GMT ", "httpHostHeader": "null", "httpUserAgent": "Wget/1.11.4 (Red Hat modified)"}, "portScan": "null", "sqlInjection": "null", "triggeredComponentAttacks": "null", "hostSweep": "null", "matchedSignature": "null", "communicationRuleMatch": "null", "fastFlux": "null"}, "alertState": "UnAcknowledged", "uniqueAlertId": "6245941293374080682"}
-```
 
 
 

@@ -3,7 +3,7 @@
 
 G Suite is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -59,13 +59,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"kind":"admin#directory#member","etag":"\"XXXXXXXX/XXXXX\"","id":"XXXXXXXXXXXXXXXXXXX","email":"XXXXXXXX@XXXX.XXX","role":"MEMBER","type":"USER","status":"ACTIVE"},{"kind":"admin#directory#member","etag":"\"XXXXXXXXXXXXXXXXX/XXXXXXXXXXXXXXXX\"","id":"XXXXXXXXXXXXXXXXXXXX","email":"XXXXXXX@XXXXXXXX.XX","role":"MEMBER","type":"USER","status":"ACTIVE"}]
-```
-
-
-
 #### Delete OU
 Delete an organizational unit.
 Timeout - 600 Seconds
@@ -91,13 +84,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"kind":"admin#directory#group","id":"XXXXXX","etag":"\"XXXXXXXXXXX\"","email":"XXXXXXXX@XXXXXXXX.com","name":"XXXXXXXXXXXXXX","description":"","adminCreated":"True"}]
-```
-
-
-
 #### Ping
 Test connectivity to Google Workspace
 Timeout - 600 Seconds
@@ -120,13 +106,6 @@ Timeout - 600 Seconds
 |Department|The name of the department of the user.|False|String||
 |Organization|The name of the organization of the user.|False|String||
 |Change Password At Next Login|Whether to force the user to change his password on next login.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-[{"kind":"admin#directory#user","id":"XXXXXXXXXXX","etag":"XXXXXX","primaryEmail":"first@XXX.com","name":{"givenName":"XXXXXX","familyName":"XXXXXXX"},"isAdmin":"False","isDelegatedAdmin":"False","creationTime":"2020-12-22T13:44:29.000Z","organizations":[{"name":"MyOrg"}],"phones":[{"value":"XXXXXXXX"}],"gender":{"type":"male"},"customerId":"XXXXXX","orgUnitPath":"/","isMailboxSetup":"False"}]
-```
 
 
 
@@ -166,13 +145,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"deleted_extensions": ["xxxx"]}]
-```
-
-
-
 #### Block Extension
 Use the Block Extension action to block a specified Chrome extension in an organizational unit.
 Note: A Chrome Enterprise license is required to use this action.
@@ -186,23 +158,9 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"targetKey":{"targetResource":"orgunits/03ph8a2z4jjhs0c","additionalTargetKeys":{"app_id":"chrome:aapbdbdomjkkjkaonfhkkikfgjllcleb"}},"value":{"policySchema":"chrome.users.apps.InstallType","value":{"appInstallType":"BLOCKED"}},"sourceKey":{"targetResource":"orgunits/03ph8a2z4jjhs0c"},"addedSourceKey":{"targetResource":"orgunits/03ph8a2z4jjhs0c"}}]
-```
-
-
-
 #### Enrich Entities
 Enrich Google SecOps User entities with information from Google Workspace.
 Timeout - 600 Seconds
-
-
-
-##### JSON Results
-```json
-[{"Entity":"XXXXXX@XXXXXX.XXX","EntityResult":{"kind":"admin#directory#user","id":"105122240427909920723","etag":"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX","primaryEmail":"XXXXXX@XXXXXX.XXX","name":{"givenName":"XXXXX","familyName":"XXXXX","fullName":"XXXXXXXXX"},"isAdmin":"False","isDelegatedAdmin":"False","lastLoginTime":"1970-01-01T00:00:00.000Z","creationTime":"2020-12-22T13:18:36.000Z","agreedToTerms":"False","suspended":"False","archived":"False","changePasswordAtNextLogin":"True","ipWhitelisted":"False","emails":[{"address":"XXXXXX@XXXXXX.XXX","primary":"True"},{"address":"XXXXX@XXXXXX.XXXX.test-google-a.com"}],"nonEditableAliases":["XXXXX@XXXXXXXX.com.test-google-a.com"],"customerId":"XXXXXXXX","orgUnitPath":"XXXXXXXX","isMailboxSetup":"True","isEnrolledIn2Sv":"False","isEnforcedIn2Sv":"False","includeInGlobalAddressList":"True"}}]
-```
 
 
 
@@ -223,13 +181,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"Entity": "fakeuser@smplylab.com", "EntityResult": {"roles": ["GSuiteTests", "_GROUPS_EDITOR_ROLE", "ray-test2-role"], "unique_privileges": ["VIEW_SITE_DETAILS", "ACCESS_EMAIL_LOG_SEARCH", "ACCESS_ADMIN_QUARANTINE", "ACCESS_RESTRICTED_QUARANTINE", "ADMIN_QUALITY_DASHBOARD_ACCESS", "MANAGE_DLP_RULE", "DASHBOARD_ACCESS", "MANAGE_GSC_RULE", "VIEW_GSC_RULE", "SECURITY_HEALTH_DASHBOARD_ACCESS", "SIT_CALENDAR_VIEW_METADATA", "SIT_CHAT_VIEW_METADATA", "SIT_CHROME_VIEW_METADATA", "SIT_DEVICE_UPDATE_DELETE", "SIT_DEVICE_VIEW_METADATA", "SIT_DRIVE_UPDATE_DELETE"]}}]
-```
-
-
-
 #### List Group Privileges
 List roles and privileges related to the group using Google Workspace.
 Timeout - 600 Seconds
@@ -246,13 +197,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"Entity": "fakeuser@smplylab.com", "EntityResult": {"roles": ["GSuiteTests", "_GROUPS_EDITOR_ROLE", "ray-test2-role"], "unique_privileges": ["VIEW_SITE_DETAILS", "ACCESS_EMAIL_LOG_SEARCH", "ACCESS_ADMIN_QUARANTINE", "ACCESS_RESTRICTED_QUARANTINE", "ADMIN_QUALITY_DASHBOARD_ACCESS", "MANAGE_DLP_RULE", "DASHBOARD_ACCESS", "MANAGE_GSC_RULE", "VIEW_GSC_RULE", "SECURITY_HEALTH_DASHBOARD_ACCESS", "SIT_CALENDAR_VIEW_METADATA", "SIT_CHAT_VIEW_METADATA", "SIT_CHROME_VIEW_METADATA", "SIT_DEVICE_UPDATE_DELETE", "SIT_DEVICE_VIEW_METADATA", "SIT_DRIVE_UPDATE_DELETE"]}}]
-```
-
-
-
 #### Get Group Details
 Retrieve information about a group using Google Workspace.
 Timeout - 600 Seconds
@@ -261,13 +205,6 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Group Email Addresses|A comma-separated list of group emails that you want to examine.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"Entity": "mytest@smplylab.com", "EntityResult": {"kind": "groupsSettings#groups", "email": "mytest@smplylab.com", "name": "000", "description": "testdesc", "whoCanJoin": "CAN_REQUEST_TO_JOIN", "whoCanViewMembership": "ALL_MEMBERS_CAN_VIEW", "whoCanViewGroup": "ALL_MEMBERS_CAN_VIEW", "whoCanInvite": "ALL_MANAGERS_CAN_INVITE", "whoCanAdd": "ALL_MANAGERS_CAN_ADD", "allowExternalMembers": "false", "whoCanPostMessage": "ANYONE_CAN_POST", "allowWebPosting": "true", "primaryLanguage": "en_US", "maxMessageBytes": 26214400, "isArchived": "false", "archiveOnly": "false", "messageModerationLevel": "MODERATE_NONE", "spamModerationLevel": "MODERATE", "replyTo": "REPLY_TO_IGNORE", "includeCustomFooter": "false", "customFooterText": "", "sendMessageDenyNotification": "false", "defaultMessageDenyNotificationText": "", "showInGroupDirectory": "true", "allowGoogleCommunication": "false", "membersCanPostAsTheGroup": "false", "messageDisplayFont": "DEFAULT_FONT", "includeInGlobalAddressList": "true", "whoCanLeaveGroup": "ALL_MEMBERS_CAN_LEAVE", "whoCanContactOwner": "ANYONE_CAN_CONTACT", "whoCanAddReferences": "NONE", "whoCanAssignTopics": "NONE", "whoCanUnassignTopic": "NONE", "whoCanTakeTopics": "NONE", "whoCanMarkDuplicate": "NONE", "whoCanMarkNoResponseNeeded": "NONE", "whoCanMarkFavoriteReplyOnAnyTopic": "NONE", "whoCanMarkFavoriteReplyOnOwnTopic": "NONE", "whoCanUnmarkFavoriteReplyOnAnyTopic": "NONE", "whoCanEnterFreeFormTags": "NONE", "whoCanModifyTagsAndCategories": "NONE", "favoriteRepliesOnTop": "true", "whoCanApproveMembers": "ALL_MANAGERS_CAN_APPROVE", "whoCanBanUsers": "OWNERS_AND_MANAGERS", "whoCanModifyMembers": "OWNERS_AND_MANAGERS", "whoCanApproveMessages": "OWNERS_AND_MANAGERS", "whoCanDeleteAnyPost": "OWNERS_AND_MANAGERS", "whoCanDeleteTopics": "OWNERS_AND_MANAGERS", "whoCanLockTopics": "OWNERS_AND_MANAGERS", "whoCanMoveTopicsIn": "OWNERS_AND_MANAGERS", "whoCanMoveTopicsOut": "OWNERS_AND_MANAGERS", "whoCanPostAnnouncements": "OWNERS_AND_MANAGERS", "whoCanHideAbuse": "NONE", "whoCanMakeTopicsSticky": "NONE", "whoCanModerateMembers": "OWNERS_AND_MANAGERS", "whoCanModerateContent": "OWNERS_AND_MANAGERS", "whoCanAssistContent": "NONE", "customRolesEnabledForSettingsToBeMerged": "false", "enableCollaborativeInbox": "false", "whoCanDiscoverGroup": "ALL_IN_DOMAIN_CAN_DISCOVER", "defaultSender": "DEFAULT_SELF"}}]
-```
 
 
 
@@ -280,13 +217,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Organization Unit Name|The name of the organizational unit from which to remove the extension.|True|String||
 |Extension ID|The ID of the extension to remove.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"removed_extensions": ["xxxx"]}]
-```
 
 
 
@@ -309,13 +239,6 @@ Timeout - 600 Seconds
 |Custom Query Parameter|Optional. Specify custom query parameter you want to add to the list users search call. For example, orgName='Human Resources' For reference on which fields can be used see https://developers.google.com/admin-sdk/directory/v1/guides/search-users#fields. Note: when providing the 'Custom Query Parameter', make sure that you are not providing 'email' field alongside 'Email Addresses' parameter as the generated query will not work.|False|String||
 |Return only users without 2fa?|If enabled, action will only return users that don't have 2fa enabled.|False|Boolean|false|
 |Email Addresses|Specify a comma-separated list of email addresses that need to be searched for. Note: if 'Email Addresses' parameter is used, then 'Record Limit' parameter is ignored.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"kind": "admin#directory#user","id": "XXXXXXXXXXXXXXXXXXXXXXXXX","etag": "\"XXXXXXXXXXXXXXXXXXXXXXXXXX\"","primaryEmail": "XXXXXXXX@XXXXXXX.XXX","name": {"givenName": "XXXXXXXX","familyName": "XXXXXX","fullName": "XXXXXXXXX"},"isAdmin":"True","isDelegatedAdmin":"False","lastLoginTime": "2020-12-22T09:45:34.000Z","creationTime": "2020-07-22T09:23:28.000Z","agreedToTerms":"True","suspended":"False","archived":"False","changePasswordAtNextLogin":"False","ipWhitelisted":"False","emails": [{"address": "XXXXXXXX@XXXXXXX.XXX","primary":"True"},{"address": "XXXXXXXXXX@XXXXXXXX.com.test-google-a.com"}],"relations": [{"value": "XXXXXXXX@smplylab.com","type": "manager"}],"organizations": [{"primary":"True","customType": "","department": "XXXXXXXX"}],"nonEditableAliases": ["XXXXXXXX@XXXXXXXX.com.test-google-a.com"],"customerId": "XXXXXXXXX","orgUnitPath": "/Management","isMailboxSetup":"True","isEnrolledIn2Sv":"False","isEnforcedIn2Sv":"False","includeInGlobalAddressList":"True","recoveryEmail": "XXXXXXX@XXXXXXXXX.XX"},{"kind": "admin#directory#user","id": "XXXXXXXXXXXXXXXXXX","etag": "\"XXXXXXXXXXXXXXXXXXXXX\"","primaryEmail": "XXXXXXX@XXXXXXXX.com","name": {"givenName": "XXXXXXXX","familyName": "XXXXXXXXXX","fullName": "Siemplify LAB Siemplify LAB"},"isAdmin":"True","isDelegatedAdmin":"False","lastLoginTime": "2020-12-25T13:02:42.000Z","creationTime": "2020-05-14T14:00:52.000Z","agreedToTerms":"True","suspended":"False","archived":"False","changePasswordAtNextLogin":"False","ipWhitelisted":"False","emails": [{"address": "XXXXXXX-XXXX@XXXXXXXXX.com","primary":"True"},{"address": "XXXXXXXX-XXXX@XXXXXXXX.com.test-google-a.com"}],"nonEditableAliases": ["XXXXXXXX-XXXX@XXXXXXXX.com.test-google-a.com"],"customerId": "XXXXXXXX","orgUnitPath": "/Management","isMailboxSetup":"True","isEnrolledIn2Sv":"False","isEnforcedIn2Sv":"False","includeInGlobalAddressList":"True","recoveryEmail": "XXXXXXX@XXXXXXX.co"}]
-```
 
 
 
@@ -344,24 +267,10 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"Entity":"xxxx","EntityResult":{"name":"xxxx","displayName":"xxxx","description":"xxxx","appId":"xxxx","revisionId":"xxxx","type":"xxxx","iconUri":"xxxx","detailUri":"xxxx","firstPublishTime":"xxxx","latestPublishTime":"xxxx","publisher":"xxxx","reviewNumber":"xxxx","reviewRating":4,"chromeAppInfo":{"supportEnabled":true,"minUserCount":1000,"permissions":[{"type":"xxxx"},{"type":"xxxx","documentationUri":"xxxx","accessUserData":false},{"type":"xxxx","documentationUri":"xxxx","accessUserData":false},{"type":"xxxx","documentationUri":"xxxx","accessUserData":true}],"siteAccess":[{"hostMatch":"xxxx"},{"hostMatch":"xxxx"}],"isTheme":false,"googleOwned":true,"isCwsHosted":true,"kioskEnabled":false,"isKioskOnly":false,"type":"xxxx","isExtensionPolicySupported":false,"manifestVersion":"xxxx","requestingUserDetails":[{"email":"xxxx","justification":"xxxx"}],"requestingDeviceDetails":[{"device":"xxxx","justification":"xxxx"}]}}}]
-```
-
-
-
 #### Get Host Browser Details
 Use the Get Host Browser Details action to retrieve information about browsers associated with a specified Google SecOps Hostname entity.
 Note: This action requires a Chrome Enterprise license.
 Timeout - 600 Seconds
-
-
-
-##### JSON Results
-```json
-[{"Entity":"xxxx","EntityResult":{"deviceId":"xxxx","kind":"xxxx","lastPolicyFetchTime":"xxxx","osPlatform":"xxxx","osArchitecture":"xxxx","osVersion":"xxxx","machineName":"xxxx","lastRegistrationTime":"xxxx","extensionCount":"xxxx","policyCount":"xxxx","lastDeviceUser":"xxxx","lastActivityTime":"xxxx","osPlatformVersion":"xxxx","browserVersions":["xxxx"],"lastStatusReportTime":"xxxx","lastDeviceUsers":[{"userName":"xxxx","lastStatusReportTime":"xxxx"}],"machinePolicies":[{"source":"xxxx","name":"xxxx","value":"xxxx","error":"xxxx"}],"browsers":[{"browserVersion":"xxxx","channel":"xxxx","lastStatusReportTime":"xxxx","executablePath":"xxxx","profiles":[{"name":"xxxx","id":"xxxx","lastStatusReportTime":"xxxx","lastPolicyFetchTime":"xxxx","chromeSignedInUserEmail":"xxxx","extensions":[{"extensionId":"xxxx","version":"xxxx","permissions":["xxxx"],"name":"xxxx","description":"xxxx","appType":"xxxx","homepageUrl":"xxxx","installType":"xxxx","disabled":"xxxx","manifestVersion":"xxxx"}],"userPolicies":[{"source":"xxxx","name":"xxxx","value":"xxxx"}]}],"pendingInstallVersion":"xxxx"}],"virtualDeviceId":"xxxx","orgUnitPath":"xxxx","deviceIdentifiersHistory":{"records":[{"identifiers":{"machineName":"xxxx"},"firstRecordTime":"xxxx","lastActivityTime":"xxxx"}]}}}]
-```
 
 
 
@@ -379,13 +288,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"kind":"admin#directory#orgUnit","etag":"XXXXXXXXXXXX","name":"XXXXX","orgUnitPath":"/XXXXX","orgUnitId":"id:XXXXXXXXXX","parentOrgUnitPath":"/","parentOrgUnitId":"id:XXXXXXXXXX"}]
-```
-
-
-
 #### List OU Of Account
 List the organizational units of an account
 Timeout - 600 Seconds
@@ -399,13 +301,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"kind": "admin#directory#orgUnit", "parentOrgUnitPath": "/", "name": "XXXXX", "etag": "\"XXXXXXXXXXXXXXXXXXXXXXXXXX\"", "orgUnitPath": "/OU-1", "parentOrgUnitId": "id:XXXX", "blockInheritance": false, "orgUnitId": "id:XXX", "description": ""}]
-```
-
-
-
 #### List Group Members
 List the members of a group
 Timeout - 600 Seconds
@@ -415,13 +310,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Group Email Address|Email address of the group.|True|String||
 |Include Derived Membership|Whether to list indirect memberships.|False|Boolean|true|
-
-
-
-##### JSON Results
-```json
-[{"status": "ACTIVE", "kind": "admin#directory#member", "email": "XXXX_XXX@example.com", "etag": "\"XXXXXXXXXXXXXXXXXXX\"", "role": "MEMBER", "type": "USER", "id": "XXX"}]
-```
 
 
 
@@ -445,13 +333,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"kind":"admin#directory#user","id":"XXXXXXXX","etag":"\"XXXXXXXXXXXXXXXXXX\"","primaryEmail":"XXXXXX@XXXXXX.com","name":{"givenName":"XXXXXXX","familyName":"XXXXXXXX"},"isAdmin":"False","isDelegatedAdmin":"False","lastLoginTime":"2020-12-22T15:07:44.000Z","creationTime":"2020-12-22T14:38:52.000Z","agreedToTerms":"True","suspended":"False","archived":"False","changePasswordAtNextLogin":"False","ipWhitelisted":"False","emails":[{"address":"XXXXXX@XXXXXX.com","primary":"True"},{"address":"XXXXX@XXXXXX.com.test-google-a.com"}],"organizations":[{"name":"update_org","customType":"","department":""}],"phones":[{"value":"XXXXXXX","type":"custom","customType":""}],"nonEditableAliases":["XXXXXX@XXXXXX.com.test-google-a.com"],"gender":{"type":"female"}, "customerId":"XXXXXXX","orgUnitPath":"/","isMailboxSetup":"True","includeInGlobalAddressList":"True","recoveryEmail":""}]
-```
-
-
-
 #### Revoke User Session
 Use the Revoke User Sessions action to revoke the user web and device sessions and reset their sign-in cookies using Google Workspace. This action runs on the Google SecOps User entity.
 Timeout - 600 Seconds
@@ -463,13 +344,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"Entity": "test@domain.com", "EntityResult": {"Status": "done"}}]
-```
-
-
-
 #### Search User Activity Events
 Use the User Activity Events action to retrieve activity events from an application for a specified Google SecOps User entity.
 Timeout - 600 Seconds
@@ -478,19 +352,12 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |User Email Addresses|A comma-separated list of additional user email addresses to process.The action processes all users in this list in addition to a User entity (if one is provided).|False|String||
-|Application Names|A list of applications to query for activity events.For a full list of supported applications, see the [ApplicationName documentation](https://developers.google.com/workspace/admin/reports/reference/rest/v1/activities/list#applicationname).|True|21|ALL|
+|Application Names|A list of applications to query for activity events.For a full list of supported applications, see the [ApplicationName documentation](https://developers.google.com/workspace/admin/reports/reference/rest/v1/activities/list#applicationname).|True|MultipleChoiceParameter|ALL|
 |Event Type Filter|A comma-separated list of event types to retrieve.|False|String||
 |Time Frame|The time frame for the activity search. If Custom is selected, the Start Time parameter is required.The possible values are as follows:     • Last Hour    • Last 6 Hours    • Last 24 Hours    • Last Week    • Last Month    • Custom|False|List|Last Hour|
 |Start Time|The start of the time range for the activity search.This parameter is required if Custom is selected for the Time Frame parameter.Configure the value in ISO 8601 format.|False|String||
 |End Time|The end of the time range for the activity search.This parameter is optional when Custom is selected for the Time Frame parameter and defaults to the current time if not provided.Configure the value in ISO 8601 format.|False|String||
 |Max Events To Return|The maximum number of events to return per user. The default value is 200.The maximum value is 1000.The action processes a maximum of 1000 events per user, per application.|False|String|200|
-
-
-
-##### JSON Results
-```json
-[{"Entity": "xxxx", "EntityResult": [{"applicationName": "xxxx", "type": "xxxx", "name": "xxxx", "parameters": [{"name": "xxxx", "value": "xxxx"}, {"name": "xxxx", "multiMessageValue": [{"parameter": [{"name": "xxxx", "value": "xxxx"}, {"name": "xxxx", "multiValue": ["xxxx"]}]}]}, {"name": "xxxx", "multiValue": ["xxxx"]}, {"name": "xxxx", "boolValue": "xxxx"}]}]}]
-```
 
 
 
@@ -505,13 +372,6 @@ Timeout - 600 Seconds
 |Name|Display name of the OU.|False|String||
 |Description|Description of the OU.|False|String||
 |OU Path|The full path to the organizational unit. If organizational unit is located under root (/) path, provide just organizational unit name, without path.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"kind":"admin#directory#orgUnit","etag":"XXXXXXXXXXXX","name":"XXXXX","orgUnitPath":"/XXXXX","orgUnitId":"id:XXXXXXXXXX","parentOrgUnitPath":"/","parentOrgUnitId":"id:XXXXXXXXXX"}]
-```
 
 
 

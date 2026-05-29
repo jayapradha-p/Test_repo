@@ -3,7 +3,7 @@
 
 Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -71,11 +71,8 @@ The Apache Kafka Connector retrieves messages from Apache Kafka.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|The name of the field that stores the product name.|True|String|Product Name|
-|EventClassId|The name of the field that determines the event name.|True|String|event_type|
 |Environment Field Name|The name of the field that stores the environment name.If the field is not found, the system uses the default environment. |False|String||
 |Environment Regex Pattern|A regular expression pattern that runs on the value from the Environment Field Name field to manipulate the result.The default value, .*, retrieves the raw field value.If the regular expression pattern is empty or the environment value is null, the system uses the default environment.|False|String|.*|
-|PythonProcessTimeout|The timeout, in seconds, for the Python process running the script.|True|Integer|180|
 |Kafka Brokers|A comma-separated list of Kafka brokers to connect to, in the format `hostname:port`.|True|String||
 |Use TLS for connection|If enabled, the integration uses TLS encryption for authentication. A CA certificate is mandatory for this connection.|False|Boolean|false|
 |Use SASL PLAIN with TLS for connection|If enabled, the integration uses the SASL PLAIN username and password mechanism for authentication. This option requires a SASL Username and Password to be provided. It is only supported with TLS encryption, which requires a CA certificate.|False|Boolean|false|
@@ -89,8 +86,8 @@ The Apache Kafka Connector retrieves messages from Apache Kafka.
 |Consumer group ID|The identifier of the consumer group used when retrieving incidents.|False|String||
 |Partitions|A CSV list of partitions from which to fetch messages.|False|String||
 |Initial Offset|The initial offset specifies where the connector starts fetching messages.A positive integer fetches from that offset number. To start from the beginning or end of the partition, use the values 'earliest' or 'latest'.|False|String||
-|Max Messages To Fetch|The maximum number of messages the connector processes per iteration.|True|Integer|100|
-|Poll Timeout|Poll timeout to consume a message from Kafka, in seconds.|False|Integer|5|
+|Max Messages To Fetch|The maximum number of messages the connector processes per iteration.|True|Int|100|
+|Poll Timeout|Poll timeout to consume a message from Kafka, in seconds.|False|Int|5|
 |Case Name Template|A custom case name.You can use placeholders in the format [field_name], for example: Phishing - [event_mailbox].This parameter adds a custom_case_name key to the Google SecOps event.The connector extracts placeholder values from the first Google SecOps event, and placeholders are only supported for fields that contain a string value.|False|String||
 |Alert Name Template|A custom alert name.You can use placeholders in the format [field_name], for example: Phishing - [event_mailbox].The connector extracts placeholder values from the first Google SecOps event, and placeholders are only supported for fields that contain a string value.If you do not provide a value or use an invalid template, the connector uses the fallback value "{Connector name} - Alert".|True|String||
 |Rule Generator Template|A custom rule generator.You can use placeholders in the format [field_name], for example: Phishing - [event_mailbox].The connector extracts placeholder values from the first Google SecOps event, and placeholders are only supported for fields that contain a string value.If you do not provide a value or use an invalid template, the connector uses the fallback value "{Connector name} - Rule Generator".|True|String||

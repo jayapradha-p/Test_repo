@@ -3,7 +3,7 @@
 
 CyberArk's Privileged Access Manager is a full life-cycle solution for managing the most privileged accounts and SSH Keys in the enterprise. It enables organizations to secure, provision, manage, control and monitor all activities associated with all types of privileged identities.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -50,13 +50,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"categoryModificationTime": "1667915248", "platformId": "", "safeName": "XXXXX", "id": "12_23", "name": "xxxx", "userName": "xxxx", "secretType": "password", "secretManagement_automaticManagementEnabled": "True", "secretManagement_lastModifiedTime": "1667918145", "createdTime": "1667915248"}]
-```
-
-
-
 #### Get Account Password Value
 Get account password value from CyberArk PAM. Note: Both password and SSH Key can be retrieved with this action.  Note 2: This action doesn’t run on Chronicle SOAR entities.
 Timeout - 600 Seconds
@@ -69,13 +62,6 @@ Timeout - 600 Seconds
 |Ticketing System Name|Specify the name of the ticketing system.|False|String||
 |Ticket ID|Specify the ticketing system ticket id.|False|String||
 |Version|Specify the account password value version to retrieve.|False|String||
-
-
-
-##### JSON Results
-```json
-{"content": "\"XXXX\""}
-```
 
 
 

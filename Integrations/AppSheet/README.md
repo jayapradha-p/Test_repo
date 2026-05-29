@@ -3,7 +3,7 @@
 
 AppSheet provides a no-code development platform for application software, which allows users to create mobile, tablet, and web applications using data sources like Google Drive, DropBox, Office 365, and other cloud-based spreadsheet and database platforms.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -38,13 +38,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"_RowNumber": "61", "Name": "New Park", "State": "IL", "Visited?": "Y", "Location": "44.350000, -68.210000", "Year Established": "2021", "Area (Acres)": "21", "Recreation Visitors (2013)[6]": "", "Image": "", "Photo": "", "Description": "", "Wikipedia URL": ""}]
-```
-
-
-
 #### Ping
 Test connectivity to the AppSheet with parameters provided at the integration configuration page on the Marketplace tab.
 Timeout - 600 Seconds
@@ -63,13 +56,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"_RowNumber": "2", "Name": "Acadia", "State": "Maine"}]
-```
-
-
-
 #### Delete Record
 Delete a record in a table in AppSheet.
 Timeout - 600 Seconds
@@ -79,13 +65,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Table Name|Specify the JSON object of the record that needs to be deleted. You only need to provide the unique identifier key of the record.|True|String||
 |Record JSON Object|Specify the JSON object of the record that needs to be deleted. You only need to provide the "ID" of the record.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"_RowNumber": "61", "Name": "New Park", "State": "IL", "Visited?": "Y", "Location": "44.350000, -68.210000", "Year Established": "2021", "Area (Acres)": "21", "Recreation Visitors (2013)[6]": "", "Image": "", "Photo": "", "Description": "", "Wikipedia URL": ""}]
-```
 
 
 
@@ -102,13 +81,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"name": "NationalParks", "id": "NationalParks"}]
-```
-
-
-
 #### Update Record
 Update a record in a table in AppSheet.
 Timeout - 600 Seconds
@@ -118,13 +90,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Table Name|Specify the name of the table in which you want to update a record.|True|String||
 |Record JSON Object|Specify the JSON object of the record that needs to be updated. You need to provide the "ID" of the record and fields that you want to update.|True|String||
-
-
-
-##### JSON Results
-```json
-[{"_RowNumber": "61", "Name": "New Park", "State": "IL", "Visited?": "Y", "Location": "44.350000, -68.210000", "Year Established": "2021", "Area (Acres)": "21", "Recreation Visitors (2013)[6]": "", "Image": "", "Photo": "", "Description": "", "Wikipedia URL": ""}]
-```
 
 
 

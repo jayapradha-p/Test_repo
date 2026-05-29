@@ -3,7 +3,7 @@
 
 Snowflake enables data storage, processing, and analytic solutions that are faster, easier to use, and far more flexible than traditional offerings. Snowflake combines a completely new SQL query engine with an innovative architecture natively designed for the cloud. To the user, Snowflake provides all of the functionality of an enterprise analytic database, along with many additional special features and unique capabilities.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -46,13 +46,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"C_CUSTKEY":"60xxx","C_NAME":"Customer#000xxxxx","C_ADDRESS":"9Iixxxxxx","C_NATIONKEY":"14","C_PHONE":"24-678-xxx-xxxx"}]
-```
-
-
-
 #### Execute Custom Query
 Execute a custom query in Snowflake. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed.
 Timeout - 600 Seconds
@@ -64,13 +57,6 @@ Timeout - 600 Seconds
 |Database|Specify the name of the database in which you want to execute the query.|True|String||
 |Schema|Specify the name of the schema in which you want to execute the query.|False|String||
 |Max Results To Return|Specify how many results to return for the query. Default: 50.|False|String|50|
-
-
-
-##### JSON Results
-```json
-[{"C_CUSTKEY":"60xxx","C_NAME":"Customer#000xxxxx","C_ADDRESS":"9Iixxxxxx","C_NATIONKEY":"14","C_PHONE":"24-678-xxx-xxxx"}]
-```
 
 
 

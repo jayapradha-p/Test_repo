@@ -3,7 +3,7 @@
 
 FireEye Email Threat Prevention Cloud (ETP) is different from traditional email security. It is a complete, cloud-based email security solution that delivers automatic protection from the targeted, spear-phishing attacks. Plus, it includes industry-leading FireEye Advanced Threat Intelligence.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -48,15 +48,12 @@ Pull alerts from FireEye ETP. Alerts from FireEye ETP are grouped based on the e
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
-|EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|alertType|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field.Default is .* to catch all and return the value unchanged.Used to allow the user to manipulate the environment field via regex logic.If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
-|PythonProcessTimeout|Timeout limit for the python process running the current script.|True|Integer|180|
 |API Root|API root of the FireEye ETP instance.|True|String|https://etp.us.fireeye.com|
 |API Key|API Key of the FireEye ETP account.|True|Password|*****|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the FireEye ETP server is valid.|False|Boolean|False|
-|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Integer|1|
+|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Int|1|
 |Timezone|Timezone of the instance. Default: UTC. Example: +1 will be UTC+1 and -1 will be UTC-1.|False|String||
 |Use whitelist as a blacklist|If enabled, whitelist will be used as a blacklist.|False|Boolean|false|
 |Proxy Server Address|The address of the proxy server to use|False|String||

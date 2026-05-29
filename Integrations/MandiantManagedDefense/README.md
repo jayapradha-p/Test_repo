@@ -3,7 +3,7 @@
 
 Mandiant Managed Defense provides 24/7 managed detection and response (MDR) with access to frontline experts who monitor your security technology to help find and investigate threats, proactively hunt for ongoing or past breaches, and respond before attacks impact your business.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -66,9 +66,6 @@ Pull investigation from Mandiant Managed Defense. Dynamic List works with the "n
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
-|EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|type|
-|PythonProcessTimeout|Timeout limit for the python process running the current script.|True|Integer|180|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |API Root|API root of the Mandiant instance.|True|String|https://api.services.mandiant.com|
@@ -76,9 +73,9 @@ Pull investigation from Mandiant Managed Defense. Dynamic List works with the "n
 |Client Secret|Client Secret of the Mandiant Managed Defense account.|True|Password|*****|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the Mandiant server is valid.|False|Boolean|true|
 |Status Filter|Status filter for the investigations. Note: If nothing is provided, investigations with all status will be ingested. Possible Values:open, resolved, disputed, false-positive|False|String|open,resolved,disputed,false-positive|
-|Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|True|Integer|24|
-|Padding Time|The padding period in hours to fetch investigations. Represents hours. The maximum value is 12 hours.|False|Integer|12|
-|Max Investigations To Fetch|How many investigations to process per one connector iteration. Maximum: 100|True|Integer|100|
+|Max Hours Backwards|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|True|Int|24|
+|Padding Time|The padding period in hours to fetch investigations. Represents hours. The maximum value is 12 hours.|False|Int|12|
+|Max Investigations To Fetch|How many investigations to process per one connector iteration. Maximum: 100|True|Int|100|
 |Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|false|
 |Proxy Server Address|The address of the proxy server to use.|False|String||
 |Proxy Username|The proxy username to authenticate with.|False|String||

@@ -3,7 +3,7 @@
 
 Akamai provides security services deployed across a global edge network. This includes Web Application Firewall (WAF) capabilities identifying web-based attacks, Bot Management distinguishing between human and automated traffic, DDoS mitigation services absorbing malicious traffic floods, and API security protections. Akamai generates security event data reflecting threats detected and actions taken at the internet edge.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -68,13 +68,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"value": "xxxx", "status": "xxxx"}, {"value": "xxxx", "status": "xxxx", "error": "xxxx"}]
-```
-
-
-
 #### Add Items To Client List
 Use the Add Items To Client List action to add items to the client list in Akamai.
 Timeout - 600 Seconds
@@ -91,13 +84,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"createDate":"2023-04-05T19:29:02.320+00:00","createdBy":"xxxxxx","description":"xxx-xxx","expirationDate":"2023-12-31T23:59:19.700+00:00","productionStatus":"INACTIVE","stagingStatus":"INACTIVE","tags":["aaaaaaaa"],"type":"xxxx","updateDate":"2023-04-05T19:29:02.320+00:00","updatedBy":"xxx","value":"xxxx", "status": "xxxx"}, {"value": "xxxx", "status": "xxxx"}, {"value": "xxxx", "status": "xxxx", "error": "xxxx"}]
-```
-
-
-
 #### Add Items To Network List
 Use the Add Items To Network List action to add items to the network list in Akamai.
 Timeout - 600 Seconds
@@ -108,13 +94,6 @@ Timeout - 600 Seconds
 |Network List Name|Name of the network list that needs to be updated. If both "Network List Name" and "Network List ID" are provided, action will work with ID.|False|String||
 |Network List ID|ID of the network list that needs to be updated. If both "Network List Name" and "Network List ID" are provided, action will work with ID.|False|String||
 |Items|Comma-separated list of items that need to be added to the network list.|True|String||
-
-
-
-##### JSON Results
-```json
-{"networkListType": "xxxx", "accessControlGroup": "xxxx", "name": "xxxx", "elementCount": 3011, "readOnly": false, "shared": false, "syncPoint": 22, "type": "xxxx", "uniqueId": "xxxx", "links": {"activateInProduction": {"href": "xxxx", "method": "xxxx"}, "activateInStaging": {"href": "xxxx", "method": "xxxx"}, "appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}}}
-```
 
 
 
@@ -137,13 +116,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"networkListType": "xxxx", "accessControlGroup": "xxxx", "name": "xxxx", "elementCount": 3011, "readOnly": false, "shared": false, "syncPoint": 22, "type": "xxxx", "uniqueId": "xxxx", "links": {"activateInProduction": {"href": "xxxx", "method": "xxxx"}, "activateInStaging": {"href": "xxxx", "method": "xxxx"}, "appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}}}
-```
-
-
-
 #### Activate Client List
 Use the Activate Client List action to enable a specific client list within your Akamai environment.
 Timeout - 600 Seconds
@@ -159,13 +131,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"action": "xxxx", "activations": {"xxxx": {"activationId": 11111, "activationStatus": "xxxx"}}, "createDate": "2026-02-09T12:28:14.159+00:00", "createdBy": "xxxx", "listId": "xxxx", "version": 1}
-```
-
-
-
 #### Get Network Lists
 Use the Get Networks Lists action to get information about networks lists in Akamai.
 Timeout - 600 Seconds
@@ -175,18 +140,11 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Network List Name|Comma-separated list of network list names that you want to search for.|False|String||
 |Network List ID|Comma-separated list of network list ids that you want to search for.|False|String||
-|Include Items|If enabled, action will return information about items inside the network lists.|False|Boolean|false|
-|Include Activation Status|If enabled, action will return information about activation status. Note: this information is only returned, if either "Network List Name" or "Network List ID" is provided.|False|Boolean|false|
+|Include Items|If enabled, action will return information about items inside the network lists.|False|Boolean||
+|Include Activation Status|If enabled, action will return information about activation status. Note: this information is only returned, if either "Network List Name" or "Network List ID" is provided.|False|Boolean||
 |Activation Environment|Environment for which the activation status should be returned. Only returned, if you provide a specific Network List Name/Network List ID.|False|List|Both|
 |Max Network Lists To Return|How many network lists to return.|True|String|100|
 |Max Network List Items To Return|How many items to return per network list. Maximum is 100.|True|String|100|
-
-
-
-##### JSON Results
-```json
-[{"networkListType": "xxxx", "accessControlGroup": "xxxx", "name": "xxxx", "elementCount": 3011, "readOnly": false, "shared": false, "syncPoint": 22, "type": "xxxx", "uniqueId": "xxxx", "links": {"activateInProduction": {"href": "xxxx", "method": "xxxx"}, "activateInStaging": {"href": "xxxx", "method": "xxxx"}, "appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}}, "Activation_STAGING": {"activationId": 12345, "activationComments": "xxxx", "activationStatus": "xxxx", "syncPoint": 5, "uniqueId": "xxxx", "fast": false, "dispatchCount": 1, "links": {"appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "syncPointHistory": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}, "activationDetails": {"href": "xxxx"}}}, "Activation_PRODUCTION": {"activationId": 12345, "activationComments": "xxxx", "activationStatus": "xxxx", "syncPoint": 5, "uniqueId": "xxxx", "fast": false, "dispatchCount": 1, "links": {"appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "syncPointHistory": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}, "activationDetails": {"href": "xxxx"}}}, "items": ["xxxx"]}]
-```
 
 
 
@@ -205,13 +163,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"activationId": 12345, "activationComments": "xxxx", "activationStatus": "xxxx", "syncPoint": 5, "uniqueId": "xxxx", "fast": false, "dispatchCount": 1, "links": {"appendItems": {"href": "xxxx", "method": "xxxx"}, "retrieve": {"href": "xxxx"}, "statusInProduction": {"href": "xxxx"}, "statusInStaging": {"href": "xxxx"}, "syncPointHistory": {"href": "xxxx"}, "update": {"href": "xxxx", "method": "xxxx"}, "activationDetails": {"href": "xxxx"}}}
-```
-
-
-
 #### Get Client Lists
 Use the Get Client Lists action to get information about client lists in Akamai.
 Timeout - 600 Seconds
@@ -221,17 +172,10 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Client List Name|Comma-separated list of client list names that you want to search for.|False|String||
 |Client List ID|Comma-separated list of client list ids that you want to search for.|False|String||
-|Include Items|If enabled, action will return information about items inside the client list. Note: this information is only returned, if either “Client List Name” or “Client List ID” is provided.|False|Boolean|false|
+|Include Items|If enabled, action will return information about items inside the client list. Note: this information is only returned, if either “Client List Name” or “Client List ID” is provided.|False|Boolean||
 |Type|Type of the client list that needs to be searched. If Select One is provided, action will search among all client lists.|False|List|Select One|
 |Max Client Lists To Return|How many client lists to return. The maximum is 100.|True|String|100|
 |Max Client List Items To Return|How many items to return per client list. The maximum is 100.|True|String|100|
-
-
-
-##### JSON Results
-```json
-[{"availableActions": {"DELETE": {"available": true}}, "createDate": "2025-05-19T13:07:39.188+00:00", "createdBy": "xxx@abc.com", "deprecated": false, "items": [{"createDate": "2025-05-19T14:17:17.432+00:00", "createdBy": "xxxxxx", "description": "xx - xx America", "expirationDate": "2025-12-31T23:59:19.700+00:00", "productionStatus": "xxx", "stagingStatus": "xxx", "tags": ["test1"], "type": "IP", "updateDate": "2025-05-19T14:17:17.432+00:00", "updatedBy": "xxxxxx", "value": "x.x.x.x"}], "itemsCount": 1, "listId": "1234_xxxxx", "listType": "CL", "name": "xxxxaaaaasssddd", "notes": "Testing_File_Hash", "productionActivationStatus": "xxxxx", "productionActiveVersion": "x.x", "readOnly": false, "rollbackPossible": false, "shared": false, "stagingActivationStatus": "INACTIVE", "stagingActiveVersion": "x.x", "tags": [], "type": "IP", "updateDate": "2025-05-19T14:18:28.514+00:00", "updatedBy": "xxxxxxx", "upgradedFromNetworkList": false, "version": 4}]
-```
 
 
 

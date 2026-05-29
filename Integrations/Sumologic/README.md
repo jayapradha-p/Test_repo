@@ -3,12 +3,12 @@
 
 Sumo Logic is a cloud-based Machine data analytics company focusing on security, operations and BI usecases. It provides log management and analytics services that leverage machine-generated big data to deliver real-time IT insights.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Api Root||True|String|https://{IP}|
-|Access ID||True|String||
+|Access ID||True|String|None|
 |Access Key||True|Password|*****|
 |Verify SSL||False|Boolean|False|
 
@@ -46,13 +46,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"_messageid": "-9223372036854773772", "_messagetime": "1359407049529", "_blockid": "-9223372036854775674", "_sourcecategory": "service", "_format": "plain:atp:o:0:l:29:p:yyyy-MM-dd HH:mm:ss,SSS ZZZZ", "_sourcename": "/Users/some-user/Development/sumo/ops/assemblies/latest/service-20.1-SNAPSHOT/logs/service.log", "_source": "service", "_receipttime": "1359407051885", "_collectorid": "1579", "_sourceid": "1640", "_raw": "2013-01-28 13:04:09,529 -0800 INFO  [module=SERVICE] [logger=com.netflix.config.sources.DynamoDbConfigurationSource] [thread=pollingConfigurationSource] Successfully polled Dynamo for a new configuration based on table:raychaser-chiapetProperties", "_size": "246", "_collector": "local", "_messagecount": "2035", "_sourcehost": "Chiapet.local"}]
-```
-
-
-
 #### Ping
 Test Connectivity to Sumologic
 Timeout - 600 Seconds
@@ -71,9 +64,6 @@ Sumologic Connector
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|The field name used to determine the device product. e.g. _type|True|String|device_product|
-|EventClassId|The field name used to determine the event name (sub-type). e.g. _source_match_event_id|False|String|_source|
-|PythonProcessTimeout|The timeout limit (in seconds) for the python process running current script|True|String|180|
 |Api Root|The Sumologic Api root, i.e: https://api.{region}.sumologic.com|True|String||
 |Access ID|Sumologic access ID|False|String||
 |Access Key|Sumologic access key|False|Password|*****|
@@ -83,8 +73,8 @@ Sumologic Connector
 |Environment Field|The name of the field where the environment is located (flat field path). e.g. _collector|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |Indexes|Indexes to get alerts in|False|String|*|
-|Alerts Count Limit|Max count of alerts to pull in one cycle. e.g. 20|True|Integer|10|
-|Max Days Backwards|Number of days before the first connector iteration to retrieve alerts since. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. e.g. 3|True|Integer|1|
+|Alerts Count Limit|Max count of alerts to pull in one cycle. e.g. 20|True|Int|10|
+|Max Days Backwards|Number of days before the first connector iteration to retrieve alerts since. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. e.g. 3|True|Int|1|
 |Proxy Server Address|The address of the proxy server to use.|False|String||
 |Proxy Username|The proxy username to authenticate with.|False|String||
 |Proxy Password|The proxy password to authenticate with.|False|Password|*****|

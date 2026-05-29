@@ -3,11 +3,11 @@
 
 Symantec Content Analysis automatically escalates and brokers zero-day threats for dynamic sandboxing and validation before sending content to users. Analyze unknown content from one central location.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|API Root||True|None|https://x.x.x.x:8082/|
+|API Root||True|URL|https://x.x.x.x:8082/|
 |API Key||True|Password|*****|
 |Verify SSL||False|Boolean||
 

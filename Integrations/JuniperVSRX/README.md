@@ -3,12 +3,12 @@
 
 vSRX is a virtual security appliance that provides security and networking services at the perimeter or edge in virtualized private or public cloud environments. vSRX runs as a virtual machine (VM) on a standard x86 server. vSRX is built on the Junos operating system (Junos OS) and delivers networking and security features similar to those available on the software releases for the SRX Series Services Gateways. The vSRX provides you with a complete Next-Generation Firewall (NGFW) solution, including core firewall, VPN, NAT, advanced Layer 4 through Layer 7 security services such as Application Security, intrusion detection and prevention (IPS), and UTM features including Enhanced Web Filtering and Anti-Virus. Combined with Sky ATP, the vSRX offers a cloud-based advanced anti-malware service with dynamic analysis to protect against sophisticated malware, and provides built-in machine learning to improve verdict efficacy and decrease time to remediation.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Address||True|IP|x.x.x.x|
-|Port||True|Integer|8080|
+|Port||True|Int|8080|
 |Username||True|String||
 |Password||True|Password|*****|
 

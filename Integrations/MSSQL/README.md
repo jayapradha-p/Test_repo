@@ -3,11 +3,11 @@
 
 Microsoft SQL Server is a relational database management system developed by Microsoft.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Server Address||True|None|x.x.x.x|
+|Server Address||True|IP_OR_HOST|x.x.x.x|
 |Username||False|String||
 |Password||False|Password|*****|
 |Port||False|String|1433|
@@ -55,13 +55,6 @@ Timeout - 600 Seconds
 |Database Name|The DB name to run the query on|True|String||
 |Query|The query to run. Default: SELECT * FROM <>|True|String||
 |Commit|If set to true, will commit the changes to the DB|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-[{"Name": "Actions Monitor Siemplify System", "Creator": "System", "Integration": "Siemplify", "VersionId": "AAAAAAAAAAAA", "ModificationTimenixTimeInMs": 1558278307098, "Description": "Notifies of all the actions, that have individually failed at least 3 times, in the last 3 hours"}, {"Name": "Jobs Monitor Siemplify System", "Creator": "System", "Integration": "Siemplify", "VersionId": "ZZZZZZZZZZZZZ", "ModificationTimenixTimeInMs": 1558278307098, "Description": "Notifies of all the jobs, that have individually failed at least 3 times, in the last 3 hours"}]
-```
 
 
 

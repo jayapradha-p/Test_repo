@@ -3,11 +3,11 @@
 
 Cisco Stealthwatch provides pervasive network visibility and sophisticated security analytics for advanced protection across the extended network and cloud.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Api Root||True|None|https://x.x.x.x|
+|Api Root||True|IP_OR_HOST|https://x.x.x.x|
 |Username||True|String||
 |Password||True|Password|*****|
 |Verify SSL||False|Boolean|false|

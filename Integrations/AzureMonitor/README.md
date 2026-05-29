@@ -3,7 +3,7 @@
 
 Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to monitoring data from your cloud and on-premises environments.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -63,13 +63,6 @@ Timeout - 600 Seconds
 |Start Time|Start time for the query. This parameter is mandatory, if "Custom" is selected for the "Time Frame" parameter. Format: ISO 8601.|False|String||
 |End Time|End time for the query. Format: ISO 8601. If nothing is provided and "Custom" is selected for the "Time Frame" parameter then this parameter will use current time.|False|String||
 |Max Results To Return|How many results should be returned from the search. Maximum: 1000.|True|String|100|
-
-
-
-##### JSON Results
-```json
-[{"TimeGenerated": "2025-10-29T11:50:45.3033407Z", "OperationName": "Update Documents"}, {"TimeGenerated": "2025-10-29T11:50:47.0376269Z", "OperationName": "Update Incidents"}]
-```
 
 
 

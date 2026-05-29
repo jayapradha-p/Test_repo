@@ -3,12 +3,12 @@
 
 MongoDB is a free and open-source cross-platform document-oriented database program.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Server Address||True|String|x.x.x.x|
-|Port||True|Integer|27017|
+|Port||True|Int|27017|
 |Use Authentication||False|Boolean||
 |Username||True|String||
 |Password||True|String||
@@ -45,13 +45,6 @@ Timeout - 600 Seconds
 |Collection Name|The collection name to run the query on|True|String||
 |Query|The key-value query. Default: {"key": "value"}|True|String||
 |Return a single JSON result|If enabled, action will return a single JSON result, instead of a few results together, for better and easier usage in Playbooks.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-[{"_id": "5d36b5798777182dc002a9f3", "field": "value"}, {"_id": "5d36b5798777182dc002a9f4", "field": "value"}]
-```
 
 
 

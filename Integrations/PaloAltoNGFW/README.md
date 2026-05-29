@@ -3,7 +3,7 @@
 
 Palo Alto Networks next-generation firewalls are architected to safely enable applications and prevent modern threats.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -42,13 +42,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"success":["1.1.1.1","2.2.2.2"],"didn't_exist_initially":["1.1.1.1","2.2.2.2"]}
-```
-
-
-
 #### Add Ips to group
 Add IP addresses to an address group
 Timeout - 600 Seconds
@@ -60,13 +53,6 @@ Timeout - 600 Seconds
 |Vsys Name|The vsys in which the group is located. The default vsys name of NGFW is vsys1. In case configured differently, please refer to https://<NGFW IP>/php/rest/browse.php/config::devices::entry[@name='<DEVICE NAME>']::vsys for the list of all the vsys names of the device and select the relevant vsys.|False|String||
 |Address Group Name|Group name value.|True|String||
 |Use Shared Objects|If enabled, action will use shared objects instead of vsys. Note: action will not create a shared address group, if it doesn't exist.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"success":["1.1.1.1","2.2.2.2"],"failure":["1.1.1.1","2.2.2.2"],"already_exist":["1.1.1.1","2.2.2.2"]}
-```
 
 
 
@@ -90,13 +76,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"success":["1.1.1.1","2.2.2.2"],"failure":["1.1.1.1","2.2.2.2"],"already_exist":["1.1.1.1","2.2.2.2"]}
-```
-
-
-
 #### Get Blocked Applications
 List all blocked applications in a given policy
 Timeout - 600 Seconds
@@ -107,13 +86,6 @@ Timeout - 600 Seconds
 |Device Name|The device name in which the group is located. The default device name of NGFW is localhost.localdomain. In case configured differently, please refer to https://<NGFWIP>/php/rest/browse.php/config::devices for the list of all the device names and select the relevant device.|True|String||
 |Vsys Name|The vsys in which the group is located. The default vsys name of NGFW is vsys1. In case configured differently, please refer to https://<NGFW IP>/php/rest/browse.php/config::devices::entry[@name='<DEVICE NAME>']::vsys for the list of all the vsys names of the device and select the relevant vsys.|True|String||
 |Policy Name|Policy name value.|True|String||
-
-
-
-##### JSON Results
-```json
-["1und1-mail", "Filter", "Group1", "SiemplifyAppBlacklist", "apple-siri", "google-analytics"]
-```
 
 
 
@@ -132,13 +104,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-["1und1-mail", "Filter", "Group1", "SiemplifyAppBlacklist", "apple-siri", "google-analytics"]
-```
-
-
-
 #### Unblock Urls
 Remove URLs from a given URL category
 Timeout - 600 Seconds
@@ -150,13 +115,6 @@ Timeout - 600 Seconds
 |Vsys Name|The vsys in which the group is located. The default vsys name of NGFW is vsys1. In case configured differently, please refer to https://<NGFW IP>/php/rest/browse.php/config::devices::entry[@name='<DEVICE NAME>']::vsys for the list of all the vsys names of the device and select the relevant vsys.|False|String|vsys1|
 |URL Category Name|URL Category Name|True|String||
 |Use Shared Objects|If enabled, action will use shared objects instead of vsys.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"success":["www.abc.com"],"didn't_exist_initially":["www.abc.com"]}
-```
 
 
 
@@ -185,13 +143,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"success":["www.abc.com"],"failure":["www.abc.com"],"already_exist":["www.abc.com"]}
-```
-
-
-
 #### Remove Ips from group
 Remove IP addresses from an address group
 Timeout - 600 Seconds
@@ -203,13 +154,6 @@ Timeout - 600 Seconds
 |Vsys Name|The vsys in which the group is located. The default vsys name of NGFW is vsys1. In case configured differently, please refer to https://<NGFW IP>/php/rest/browse.php/config::devices::entry[@name='<DEVICE NAME>']::vsys for the list of all the vsys names of the device and select the relevant vsys.|False|String||
 |Address Group Name|The name of the required address group.|True|String||
 |Use Shared Objects|If enabled, action will use shared objects instead of vsys. Note: action will not create a shared address group, if it doesn't exist.|False|Boolean|false|
-
-
-
-##### JSON Results
-```json
-{"success":["1.1.1.1","2.2.2.2"],"didn't_exist_initially":["1.1.1.1","2.2.2.2"]}
-```
 
 
 

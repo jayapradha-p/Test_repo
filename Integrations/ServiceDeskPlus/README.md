@@ -3,7 +3,7 @@
 
 ServiceDesk Plus is a game changer in turning IT teams from daily fire-fighting to delivering awesome customer service.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -120,13 +120,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"isvipuser": "No", "subcategory": null, "resolvedtime": "0", "site": "Chicago", "timespentonreq": "0hrs 0min", "technician": "Shawn Adams", "responseduebytime": "1556101814544", "shortdescription": "Testing the API adding request", "fr_duetime": "1556101814544", "subject": "Testing API 2", "impact": "Affects Business", "city": "London", "group": null, "approval_status": null, "area": null, "requesttype": "Convert the Incident to Change", "yettoreplycount": null, "priority": "High", "respondedtime": "0", "asset": null, "createdby": "Demo", "duebytime": "1556164814544", "department": null, "status": "Work Inprogress", "category": "General", "fcr": "false", "description": "Testing the API adding request", "closurecode": null, "workorderid": "123", "completedtime": "0", "requesttemplate": "Default Request", "requester": "Catrin Folkesson", "createdtime": "1556092814544", "technician_loginname": "adams", "editing_status": "0", "level": "Tier 1", "country": "India", "is_catalog_template": "false", "sla": "High SLA", "item": null, "closurecomments": null, "mode": "SMS", "editorid": "null", "impactdetails": null, "urgency": "High"}
-```
-
-
-
 #### Wait For Status Update
 Wait for the status of a request ot update to a desired status.
 Timeout - 600 Seconds
@@ -175,13 +168,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"isvipuser": "No", "subcategory": null, "resolvedtime": "0", "site": "Chicago", "timespentonreq": "0hrs 0min", "technician": "Shawn Adams", "responseduebytime": "1556101814544", "shortdescription": "Testing the API adding request", "fr_duetime": "1556101814544", "subject": "Testing API 2", "impact": "Affects Business", "city": "London", "group": null, "approval_status": null, "area": null, "requesttype": "Convert the Incident to Change", "yettoreplycount": null, "priority": "High", "respondedtime": "0", "asset": null, "createdby": "Demo", "duebytime": "1556164814544", "department": null, "status": "Work Inprogress", "category": "General", "fcr": "false", "description": "Testing the API adding request", "closurecode": null, "workorderid": "123", "completedtime": "0", "requesttemplate": "Default Request", "requester": "Catrin Folkesson", "createdtime": "1556092814544", "technician_loginname": "adams", "editing_status": "0", "level": "Tier 1", "country": "India", "is_catalog_template": "false", "sla": "High SLA", "item": null, "closurecomments": null, "mode": "SMS", "editorid": "null", "impactdetails": null, "urgency": "High"}
-```
-
-
-
 #### Create Request
 Create a new request
 Timeout - 600 Seconds
@@ -205,13 +191,6 @@ Timeout - 600 Seconds
 |Site|The site of the request.|False|String||
 |Group|The group of the request.|False|String||
 |Impact|The impact of the request.|False|String||
-
-
-
-##### JSON Results
-```json
-{"isvipuser": "No", "subcategory": null, "resolvedtime": "0", "site": "Chicago", "timespentonreq": "0hrs 0min", "technician": "Shawn Adams", "responseduebytime": "1556101814544", "shortdescription": "Testing the API adding request", "fr_duetime": "1556101814544", "subject": "Testing API 2", "impact": "Affects Business", "city": "London", "group": null, "approval_status": null, "area": null, "requesttype": "Convert the Incident to Change", "yettoreplycount": null, "priority": "High", "respondedtime": "0", "asset": null, "createdby": "Demo", "duebytime": "1556164814544", "department": null, "status": "Work Inprogress", "category": "General", "fcr": "false", "description": "Testing the API adding request", "closurecode": null, "workorderid": "123", "completedtime": "0", "requesttemplate": "Default Request", "requester": "Catrin Folkesson", "createdtime": "1556092814544", "technician_loginname": "adams", "editing_status": "0", "level": "Tier 1", "country": "India", "is_catalog_template": "false", "sla": "High SLA", "item": null, "closurecomments": null, "mode": "SMS", "editorid": "null", "impactdetails": null, "urgency": "High"}
-```
 
 
 

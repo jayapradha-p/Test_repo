@@ -3,14 +3,14 @@
 
 Identify Manage and Block Threats Faster with Intelligence. Make informed decisions with ThreatConnect's in-platform analytics and automation.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Api Access Id|None|True|Password|*****|
-|Api Secret Key|None|True|Password|*****|
-|Api Default Org|None|True|String||
-|Api Root|None|True|String|https://sandbox.threatconnect.com/api|
+|ApiAccessId|None|True|Password|*****|
+|ApiSecretKey|None|True|Password|*****|
+|ApiDefaultOrg|None|True|String||
+|ApiBaseUrl|None|True|String|https://sandbox.threatconnect.com/api|
 
 
 #### Dependencies
@@ -38,13 +38,6 @@ Timeout - 600 Seconds
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Owner Name|Owner name to fetch the data from. Parameter also accepts comma separated list of owner names.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"EntityResult": {"securityLabels": {"securityLabel": [], "resultCount": 0}, "owners": {"owner": [{"type": "Organization", "id": 440, "name": "S"}]}, "victims": {"resultCount": 0, "victim": []}, "tags": ["C2", "Malware"], "general": {"url": {"rating": 5.0, "confidence": 100, "dateAdded": "2018-01-09T20: 12: 11Z", "description": "URLAssociatedwithCryptoLockerC2Servers", "threatAssessConfidence": 93.33, "lastModified": "2018-01-09T20: 13: 24Z", "threatAssessRating": 4.33, "webLink": "https: //sandbox.threatconnect.com/auth/indicators/details/url.xhtml?orgid=43743075&owner=S", "text": "http: //markossolomon.com/f1q7qx.php", "owner": {"type": "Organization", "id": 440, "name": "S"}, "id": 43743075}}, "observations": {"resultCount": 0, "observation": []}, "groups": null, "indicators": {"indicator": [], "resultCount": 0}, "attributes": {"Description": ["URLAssociatedwithCryptoLockerC2Servers"]}, "observationCount": {"observationCount": {"count": 0}}, "victimAssets": {"victimAsset": [], "resultCount": 0}}, "Entity": "HTTP: //MARKOSSOLOMON.COM/F1Q7QX.PHP"}]
-```
 
 
 

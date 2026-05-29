@@ -3,12 +3,12 @@
 
 CA Service Desk Manager is designed to help IT service desk analysts make every moment count through a dynamic experience so they can deliver great customer service without the fear of overbearing processes or metrics. With the solution, teams can embrace teamwork rather than working from siloed knowledge stashes and disjointed communications.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
 |Api Root||True|String|http://<IP OR FQDN>:<PORT>/|
-|Username||True|String||
+|Username||True|String|None|
 |Password||True|Password|*****|
 |Ticket Fields||True|String|customer.combo_name,category.sym,status.sym,priority.sym,active,log_agent.combo_name,assignee.combo_name,group.combo_name,affected_service.name,severity.sym,urgency.sym,impact.sym,problem.ref_num,resolution_code.sym,call_back_date,change.chg_ref_num,caused_by_chg.chg_ref_num,external_system_ticket,resolution_method.sym,symptom_code.sym,requested_by.combo_name,persistent_id,summary,description,open_date,last_mod_dt,resolve_date,close_date,ref_num|
 
@@ -77,13 +77,6 @@ Timeout - 600 Seconds
 |Comment Type Field|Ticket type. e.g. type.sym|False|String||
 |Analyst Name Field|Analyst Name. e.g. analyst.combo_name|False|String||
 |TimeStamp Field|Time field e.g. time_stamap.|False|String||
-
-
-
-##### JSON Results
-```json
-[{"time_stamp": "1546944096", "analyst.combo_name": "Analyst", "type.sym": "Log Comment", "description": "Tests Comments."}]
-```
 
 
 
@@ -156,13 +149,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"severity.sym": "None", "resolution_code.sym": "None", "group.combo_name": "None", "resolve_date": "None", "caused_by_chg.chg_ref_num": "None", "log_agent.combo_name": "TEST", "requested_by.combo_name": "None", "resolution_method.sym": "None", "problem.ref_num": "None", "change.chg_ref_num": "None", "affected_service.name": "None", "priority.sym": "3", "customer.combo_name": "TEST", "call_back_date": "None", "assignee.combo_name": "TestUser", "status": "OP", "urgency.sym": "Test", "impact.sym": "Test Group", "description": "test", "symptom_code.sym": "None", "external_system_ticket": "None", "last_mod_dt": "1547368725", "active": "1", "open_date": "1517743983", "category.sym": "None", "status.sym": "Open", "persistent_id": "cr:123456", "summary": "test", "close_date": "None"}]
-```
-
-
-
 #### Wait For Status Change
 Waiting until ticket status is changed.
 Timeout - 600 Seconds
@@ -172,13 +158,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Ticket ID|Target ticket ID.|True|String||
 |Expected Ticket Status Name|Expected status.|True|String||
-
-
-
-##### JSON Results
-```json
-{"severity.sym": "None", "resolution_code.sym": "None", "urgency.sym": "Test", "resolve_date": "None", "caused_by_chg.chg_ref_num": "None", "log_agent.combo_name": "Test", "requested_by.combo_name": "None", "resolution_method.sym": "None", "problem.ref_num": "None", "change.chg_ref_num": "None", "affected_service.name": "None", "priority.sym": "3", "customer.combo_name": "Test", "call_back_date": "None", "assignee.combo_name": "TestUser", "status": "OP", "group.combo_name": "None", "impact.sym": "Test Group", "description": "Test", "symptom_code.sym": "None", "external_system_ticket": "None", "last_mod_dt": "1547368725", "active": "1", "open_date": "1517743983", "category.sym": "None", "status.sym": "Open", "persistent_id": "cr:123456", "summary": "test", "close_date": "None"}
-```
 
 
 
@@ -224,9 +203,6 @@ Fetch tickets from CA Desk Manager.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|The field name used to determine the device product|True|String|device_product|
-|EventClassId|The field name used to determine the event name (sub-type)|False|String|description|
-|PythonProcessTimeout|The timeout limit (in seconds) for the python process running current script|True|String|60|
 |API Root|e.g. http://x.x.x.x:8080|True|String||
 |Username|Username|True|String||
 |Password|Password|True|Password|*****|

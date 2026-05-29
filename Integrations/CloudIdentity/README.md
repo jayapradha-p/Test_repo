@@ -3,7 +3,7 @@
 
 A unified identity, access, app, and endpoint management (IAM/EMM) platform.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -66,13 +66,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"name": "policies/123", "customer": "customers/123", "type": "ADMIN", "policy_query": {"query": "entity.org_units.exists(org_unit, org_unit.org_unit_id == orgUnitId('12345'))", "orgUnit": "orgUnits/12345", "sortOrder": 1}, "setting": {"type": "settings/rule.dlp", "value": {"display_name": "Test DLP Rule"}}}]
-```
-
-
-
 #### Add Entity To Detector URL List
 Use the “Add Entity To Detector URL List” action to add entities to the Cloud Identity Policy detection list. Supported entities: URL, Domain.
 Timeout - 600 Seconds
@@ -83,13 +76,6 @@ Timeout - 600 Seconds
 |Detector Policy ID|The unique identifier of the detector policy to update.|True|String||
 |URL|A comma-separated list of URLs to add to the detector list.|False|String||
 |Domain|A comma-separated list of domains to add to the detector list.|False|String||
-
-
-
-##### JSON Results
-```json
-{"type": "ADMIN", "customer": "customers/<CUSTOMER_ID>", "policyQuery": {"query": "entity.org_units.exists(org_unit, org_unit.org_unit_id == orgUnitId('<ORG_UNIT_ID>'))", "orgUnit": "orgUnits/<ORG_UNIT_ID>"}, "setting": {"type": "settings/detector.url_list", "value": {"displayName": "test_url_list_detector", "description": "test_url_list_detector desc", "urlList": {"urls": ["http://example.com", "example.org", "bad_entity.com"]}}}}
-```
 
 
 
@@ -124,13 +110,6 @@ Timeout - 600 Seconds
     }
 }
 |
-
-
-
-##### JSON Results
-```json
-{"type": "ADMIN", "customer": "customers/<CUSTOMER_ID>", "policyQuery": {"query": "entity.org_units.exists(org_unit, org_unit.org_unit_id == orgUnitId('<ORG_UNIT_ID>'))", "orgUnit": "orgUnits/<ORG_UNIT_ID>"}, "setting": {"type": "settings/rule.dlp", "value": {"display_name": "test_create_rule", "triggers": ["google.workspace.chrome.file.v1.download"], "state": "ACTIVE", "action": {"chromeAction": {"warnUser": {}}}}}}
-```
 
 
 

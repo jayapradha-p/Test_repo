@@ -3,7 +3,7 @@
 
 Manage your network security effectively, swiftly, and confidently. No matter where your network lives. Gain complete visibility, automate changes, and always be compliant.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
@@ -44,13 +44,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"status": "Success", "messages": [], "data": {"id": 10, "fields": [{"name": "Owner", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Creator", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Due", "values": ["2021-08-31 00:00:00"]}, {"name": "LastUpdated", "values": ["2021-08-13 12:31:23"]}, {"name": "Requestor", "values": ["admin<xxxxxxxxxx@siemplify.co>"]}], "originalTraffic": [{"source": {"items": [{"value": "all"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "ALL"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}], "plannedTraffic": [{"source": {"items": [{"value": "0.0.0.0-255.255.255.255"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "tcp/*"}, {"value": "udp/*"}, {"value": "ospf"}, {"value": "icmp/*"}, {"value": "gre"}, {"value": "ipsec_50"}, {"value": "ipsec_51"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}]}}
-```
-
-
-
 #### Block IP
 Block IPs in AlgoSec. Supported entities: IP address. Note: IP address entities are treated as destinations in the change request. This action creates a traffic change request to block traffic to IP entities.
 Timeout - 600 Seconds
@@ -66,13 +59,6 @@ Timeout - 600 Seconds
 |Due Date|Specify the due date for the change request. Format: ISO 8601. Example: 2021-08-13T08:16:10Z.|False|String||
 |Expiration Date|Specify the expiration date for the change request. Format: ISO 8601. Example: 2021-08-13T08:16:10Z.|False|String||
 |Custom Fields|Specify a JSON object containing information about all of the fields that need to be added to the change request. Note: this parameter has a priority over other fields|False|String||
-
-
-
-##### JSON Results
-```json
-{"status": "Success", "messages": [], "data": {"id": 10, "fields": [{"name": "Owner", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Creator", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Due", "values": ["2021-08-31 00:00:00"]}, {"name": "LastUpdated", "values": ["2021-08-13 12:31:23"]}, {"name": "Requestor", "values": ["admin<xxxxxxxxxx@siemplify.co>"]}], "originalTraffic": [{"source": {"items": [{"value": "all"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "ALL"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}], "plannedTraffic": [{"source": {"items": [{"value": "0.0.0.0-255.255.255.255"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "tcp/*"}, {"value": "udp/*"}, {"value": "ospf"}, {"value": "icmp/*"}, {"value": "gre"}, {"value": "ipsec_50"}, {"value": "ipsec_51"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}]}}
-```
 
 
 
@@ -95,13 +81,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-[{"id": 142, "name": "110: Multi-Approval Request", "description": "Create a traffic change request which requires multiple approvals", "type": "Traffic Change", "enabled": true}, {"id": 597, "name": "190: Verbatim Rule Addition", "description": "Create a traffic change request for bulk rules addition exactly as specified", "type": "Traffic Change", "enabled": true}, {"id": 550, "name": "Basic Change Traffic Request", "description": "Create a basic change traffic request", "type": "Traffic Change", "enabled": true}]
-```
-
-
-
 #### Wait for Change Request Status Update
 Wait for change request status update in AlgoSec. Note: Action is running as async, please adjust script timeout value in Siemplify IDE for action as needed. Only traffic change requests are supported.
 Timeout - 600 Seconds
@@ -111,13 +90,6 @@ Timeout - 600 Seconds
 |----|-----------|-----------|----|------------|
 |Request ID|Specify the id of the request for which action needs to check the status.|True|String||
 |Status|Specify a comma-separated list of change request statuses for which action should wait. Possible values: resolved, reconcile, open, check, implementation plan, implement, validate.|True|String|resolved|
-
-
-
-##### JSON Results
-```json
-{"status": "Success", "messages": [], "data": {"id": 10, "fields": [{"name": "Owner", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Creator", "values": ["admin<xxxxxxxx@siemplify.co>"]}, {"name": "Due", "values": ["2021-08-31 00:00:00"]}, {"name": "LastUpdated", "values": ["2021-08-13 12:31:23"]}, {"name": "Requestor", "values": ["admin<xxxxxxxxx@siemplify.co>"]}], "originalTraffic": [{"source": {"items": [{"value": "all"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "ALL"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}], "plannedTraffic": [{"source": {"items": [{"value": "0.0.0.0-255.255.255.255"}]}, "destination": {"items": [{"value": "10.0.0.3"}]}, "service": {"items": [{"value": "tcp/*"}, {"value": "udp/*"}, {"value": "ospf"}, {"value": "icmp/*"}, {"value": "gre"}, {"value": "ipsec_50"}, {"value": "ipsec_51"}]}, "application": {"items": [{"value": "any"}]}, "user": {"items": [{"value": "any"}]}, "action": "Allow"}]}}
-```
 
 
 

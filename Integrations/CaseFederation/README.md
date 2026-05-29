@@ -3,7 +3,7 @@
 
 Enables the Case Federation feature to sync metadata of cases from external platforms to a primary platform.
 
-Python Version - 3
+Python Version - V3_11
 
 
 #### Dependencies

@@ -3,11 +3,11 @@
 
 Symantec Advanced Threat Protection (ATP) performs the critical security tasks that detect, protect, and respond to threats to your network.
 
-Python Version - 3
+Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|API Root||True|None|https://x.x.x.x/|
+|API Root||True|URL|https://x.x.x.x/|
 |Client ID||True|Password|*****|
 |Client Secret||True|Password|*****|
 |Verify SSL||False|Boolean||
@@ -159,13 +159,6 @@ Timeout - 600 Seconds
 
 
 
-##### JSON Results
-```json
-{"comment": "awawdaq", "user_id": "100000", "incident_responder_name": "SEDR API", "time": "2020-05-18T08:17:18.895Z"}
-```
-
-
-
 #### Get Events Free Query
 Fetch events by free query
 Timeout - 600 Seconds
@@ -213,17 +206,14 @@ Fetch incidents from Symantec ATP
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|DeviceProductField|Enter the source field name in order to retrieve the Product Field name.|True|String|Product Name|
-|EventClassId|Enter the source field name in order to retrieve the Event Field name.|True|String|AlertName|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field.Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
-|PythonProcessTimeout|Timeout limit for the python process running the current script.|True|Integer|180|
 |API Root|API root of Symantec ATP server.|True|String|https://x.x.x.x:port|
 |Client ID|Symantec ATP Client ID|True|Password|*****|
 |Client Secret|Symantec ATP Client Secret|True|Password|*****|
 |Priority Filter|Priority filter for the incidents. If you want to ingest all of the incidents specify: Low, Medium, High.|True|String|Low, Medium, High|
-|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve incidents from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. Limit: 30 days. This is a Symantec ATP limitation.|False|Integer|1|
-|Max Incidents To Fetch|How many incidents to process per one connector iteration. Max: 1000.|False|Integer|25|
+|Fetch Max Hours Backwards|Number of hours before the first connector iteration to retrieve incidents from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. Limit: 30 days. This is a Symantec ATP limitation.|False|Int|1|
+|Max Incidents To Fetch|How many incidents to process per one connector iteration. Max: 1000.|False|Int|25|
 |Use whitelist as a blacklist|If enabled, whitelist will be used as a blacklist.|False|Boolean|false|
 |Use SSL|Option to enable SSL/TLS connection|False|Boolean|true|
 |Proxy Server Address|The address of the proxy server to use|False|String||
