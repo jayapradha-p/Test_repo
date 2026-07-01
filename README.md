@@ -26,8 +26,6 @@
 |Name|Description|
 |----|-----------|
 |Test1|testing|
-|hello|hello|
-|test1|test|
 
 
 ## Jobs
