@@ -1,26 +1,27 @@
 {
+    "hasRestrictedEnvironments": false,
     "id": 0,
-    "identifier": "91ad6fcc-0174-4829-bd1e-38489337f11f",
+    "identifier": "d38d030a-e021-4f6a-9db3-25d843d84632",
     "version": "1",
     "isEnabled": true,
     "isDebugMode": false,
     "name": "New Playbook",
-    "creator": "9e1cb0e4-a750-431a-b413-a7f76a8b62d7",
-    "modifiedBy": "9e1cb0e4-a750-431a-b413-a7f76a8b62d7",
+    "creator": "c481700f-ff5c-4f86-9282-1425a65aae51",
+    "modifiedBy": "c481700f-ff5c-4f86-9282-1425a65aae51",
     "priority": 2,
     "description": "",
     "executionScope": 1,
     "environments": [
-        "Default Environment"
+        "*"
     ],
     "categoryName": "Default",
     "categoryId": 1,
-    "originalPlaybookIdentifier": "91ad6fcc-0174-4829-bd1e-38489337f11f",
-    "creationTimeUnixTimeInMs": 1782888312031,
-    "modificationTimeUnixTimeInMs": 1782888312031,
+    "originalPlaybookIdentifier": "d38d030a-e021-4f6a-9db3-25d843d84632",
+    "creationTimeUnixTimeInMs": 1782904157596,
+    "modificationTimeUnixTimeInMs": 1782904157596,
     "trigger": {
         "id": 0,
-        "identifier": "a3c110f8-72fb-446c-803a-094d214eff98",
+        "identifier": "f23cbeea-de8e-46da-b1a9-a5820adbe6ce",
         "type": 8,
         "logicalOperator": 0,
         "conditions": [
@@ -38,8 +39,8 @@
     "steps": [
         {
             "parallelActions": [],
-            "identifier": "ce629e37-840a-4ce8-a950-d55d149de2a5",
-            "originalStepIdentifier": "ce629e37-840a-4ce8-a950-d55d149de2a5",
+            "identifier": "d4000832-4f41-4627-af66-e410ef80c757",
+            "originalStepIdentifier": "d4000832-4f41-4627-af66-e410ef80c757",
             "isAutomatic": false,
             "isSkippable": false,
             "instanceName": "Instruction_1",
@@ -52,7 +53,7 @@
             "parameters": [
                 {
                     "name": "AssignedUsers",
-                    "value": "[\"@CISO\"]",
+                    "value": null,
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -85,7 +86,7 @@
                 },
                 {
                     "name": "InstructionContent",
-                    "value": "hello",
+                    "value": "jhhjhjjh",
                     "type": null,
                     "isMandatory": false,
                     "defaultValue": null,
@@ -143,13 +144,13 @@
             "isDebugMockData": false,
             "debugData": null,
             "parentStepContainerId": null,
-            "workflowIdentifier": "91ad6fcc-0174-4829-bd1e-38489337f11f",
+            "workflowIdentifier": "d38d030a-e021-4f6a-9db3-25d843d84632",
             "isTouchedByAi": false,
             "startLoopStepIdentifier": null,
             "logsExplorerUrl": null,
             "id": 0,
-            "creationTimeUnixTimeInMs": 1782888312031,
-            "modificationTimeUnixTimeInMs": 1782888312031,
+            "creationTimeUnixTimeInMs": 1782904157596,
+            "modificationTimeUnixTimeInMs": 1782904157596,
             "additionalProperties": {}
         }
     ],
