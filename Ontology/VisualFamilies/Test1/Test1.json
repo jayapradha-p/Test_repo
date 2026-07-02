@@ -16,13 +16,10 @@
                 "secondaryDestination": "SourceAddress",
                 "thirdDestination": "SourceUserName",
                 "fourthDestination": "",
-                "visualFamily": "Test1",
-                "id": 0,
-                "creationTimeUnixTimeInMs": 1782884373050,
-                "modificationTimeUnixTimeInMs": 1782884373050
+                "id": 0
             }
         ],
-        "creationTimeUnixTimeInMs": 1782884372977,
-        "modificationTimeUnixTimeInMs": 1782884373039
+        "creationTimeUnixTimeInMs": 0,
+        "modificationTimeUnixTimeInMs": 0
     }
 }
