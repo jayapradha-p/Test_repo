@@ -1,0 +1,8 @@
+identifier: b9024367-558a-4465-bbb2-8cdbabb7e736
+type_: all
+logical_operator: and
+conditions:
+-   field_name: null
+    value: null
+    match_type: equal
+    custom_operator_name: null

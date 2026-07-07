@@ -1,21 +1,21 @@
 {
-    "system_version": "6.1.6.177",
     "readme_addons": {
+        "Block": {},
+        "Connector": {},
         "Integration": {},
+        "Job": {},
         "Mappings": {
-            "GoogleChronicle": "test",
-            "Google Chronicle": "test"
+            "Google Chronicle": "test",
+            "GoogleChronicle": "test"
         },
-        "Visual Family": {},
         "Playbook": {
             "New Playbook": "jinja",
             "playbook-5-2026": "jinja"
         },
-        "Connector": {},
-        "Job": {},
-        "Block": {}
+        "Visual Family": {}
     },
     "settings": {
         "update_root_readme": true
-    }
+    },
+    "system_version": "6.1.6.177"
 }
