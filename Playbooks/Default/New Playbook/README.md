@@ -23,12 +23,13 @@
 ##### Conditions
 |Key|Operator|Value|
 |---|--------|-----|
-|None|Equals|None|
+||Equals||
 
 
 
 ### Involved Steps (Unordered)
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
+|Siemplify_Assign Case_1|Use the "Assign Case" action to assign the case to a user.|Siemplify|Assign Case|
 
 jinja

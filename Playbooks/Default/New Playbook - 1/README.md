@@ -23,7 +23,7 @@
 ##### Conditions
 |Key|Operator|Value|
 |---|--------|-----|
-|None|Equals|None|
+||Equals||
 
 
 
@@ -31,3 +31,7 @@
 |Step Name|Description|Integration|Original Action|
 |---------|-----------|-----------|---------------|
 
+### Involved Blocks
+|Name|Description|
+|----|-----------|
+|New Block|An embedded workflow that can receive inputs and return an output.|
